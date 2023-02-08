@@ -26,7 +26,7 @@
 
 11. 双連字符--（double hyphen）：CHE是上介低路个設計。世界上个語言有叨一个是有双連字符？無，一个都無，KANzNAz台羅CHIAHf有HIAHfNIzA低路个設計。譬喻講英語有phrasal verb，以"sit down"做例，台語个同義語寫做坐lueh。看着副助詞lueh着知影頭前个坐讀做第七調。咁講英語个"sit down"愛寫做sit--down CHIAHf有法度表示伊是一个phrasal verb？。又佫譬喻講英語个"ask me"，台語翻做問我。問我用羅馬字寫做MNGzGUAz，AHw是"mngz guaz"。咁講英語个"ask me"愛寫做ask--me CHIAHf有法度讀？佫譬喻講形容詞「新个」Ew「个」是第一調，直接寫E着好，「新个」寫做SINfE AHw是"sin e"着好Aw。又佫譬講「食淡薄仔」个淡薄仔是副詞，寫做食TAMwPURHwAw， AHw是食tamwpurhwaw着好。咁講英語愛翻做"eat--a-little-bit"CHIAHf有法度讀？根本無需要用双連字符CHITf種低路个符號。
 
-12. 第一調入聲無聲調符號：台語第八調个表面發音有幾若種，有人是讀做第第二調，有人是讀做第五調，有人是讀做第七調，嘛有人讀做第一調。第二、五、七調攏有聲調符號THANGz用，但是台羅个第一調入聲無聲調符號THANGz用。
+12. 第一調入聲無聲調符號：台語第八調个表面發音有幾若種，有人是讀做第第二調，有人是讀做第五調，有人是讀做第七調，嘛有人讀做第一調。第二、五、七調攏有聲調符號THANGz用，但是台羅个第一調入聲無聲調符號THANGz用。若是有聲調無法度用台羅表示，着有信息流失个問題。
 
 13. 外來語攏是第九調無第五調：像英語个engine，日本話講エンジン，台語是寫IENxJINy/ien-jin。 首音節是第五調卡多第九調。台羅SUAHf攏寫做第九調，無第五調个寫法。以書寫自由來看，應該嘛會當寫第五調CHIAHf着。
 
