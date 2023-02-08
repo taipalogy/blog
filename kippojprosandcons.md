@@ -24,7 +24,7 @@
 
 10. 不是針對台灣話做設計：以蚵仔个北部腔做例。台語蚵仔个蚵治台羅是用o做母音，芋仔个芋是用oo做母音，王字个母音是用o做母音，以無聲調方式寫做ong。安呢問題來Az。王字个o其實是KAHf芋仔个oo㒰音素，但是你看着孤一个字母o你會掠準講王字个o是蚵仔个o。對台語來講，這是百分之百个錯誤設計。
 
-11. 双連字符--（double hyphen）：CHE是上介低路个設計。世界上个語言有叨一个是有双連字符？無，一个都無，KANzNAz台羅CHIAHf有HIAHfNIzA低路个設計。譬喻講英語有phrasal verb，以"sit down"做例，台語个同義語寫做坐lueh。看着副助詞lueh着知影頭前个坐讀做第七調。咁講英語个"sit down"愛寫做sit--down CHIAHf有法度表示伊是一个phrasal verb？。又佫譬喻講英語个"ask me"，台語翻做問我。問我用羅馬字寫做MNGzGUAz，AHw是"mngz guaz"。咁講英語个"ask me"愛寫做ask--me CHIAHf有法度讀？佫譬喻講形容詞「新个」Ew「个」是第一調，直接寫E着好，「新个」寫做SINfE AHw是"sin e"着好Aw。又佫譬講「食淡薄仔」个淡薄仔是副詞，寫做食TAMwPURHwAw， AHw是食tamwpurhwaw着好。咁講英語愛翻做"drink--a-little-bit"CHIAHf有法度讀？根本無需要用双連字符CHITf種低路个符號。
+11. 双連字符--（double hyphen）：CHE是上介低路个設計。世界上个語言有叨一个是有双連字符？無，一个都無，KANzNAz台羅CHIAHf有HIAHfNIzA低路个設計。譬喻講英語有phrasal verb，以"sit down"做例，台語个同義語寫做坐lueh。看着副助詞lueh着知影頭前个坐讀做第七調。咁講英語个"sit down"愛寫做sit--down CHIAHf有法度表示伊是一个phrasal verb？。又佫譬喻講英語个"ask me"，台語翻做問我。問我用羅馬字寫做MNGzGUAz，AHw是"mngz guaz"。咁講英語个"ask me"愛寫做ask--me CHIAHf有法度讀？佫譬喻講形容詞「新个」Ew「个」是第一調，直接寫E着好，「新个」寫做SINfE AHw是"sin e"着好Aw。又佫譬講「食淡薄仔」个淡薄仔是副詞，寫做食TAMwPURHwAw， AHw是食tamwpurhwaw着好。咁講英語愛翻做"eat--a-little-bit"CHIAHf有法度讀？根本無需要用双連字符CHITf種低路个符號。
 
 12. 第一調入聲無聲調符號：台語第八調个表面發音有幾若種，有人是讀做第第二調，有人是讀做第五調，有人是讀做第七調，嘛有人讀做第一調。第二、五、七調攏有聲調符號THANGz用，但是台羅个第一調入聲無聲調符號THANGz用。
 
