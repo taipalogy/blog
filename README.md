@@ -1,6 +1,6 @@
 # 台灣話專科
 
-台灣語書寫，文法，形態學（morphology），音節文字（syllabary）
+台灣語書寫（writing），文法（grammar），形態學（morphology），音節文字（syllabary）, 語言學（linguistics）
 
 # LICENSE
 
