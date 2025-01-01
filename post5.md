@@ -96,7 +96,7 @@ Folder構造是你アㇴ¹ツァ˜カ³你エ³codeカㇷ¹資源띠³碟仔頂�
 
 一種是整合式。framework是外部module。提示對framework動態産生出來，チァㇷ¹コㅗㇷ¹サ⁷過去AIヒァ處理。Frameworkイゥ⁷ウァㇴ⁷有獨立性，AI利用伊エ³輸出創作추ッ¹回應。
 
-一種是嵌入式。Frameworkエ³logicカㇷ¹開講系統融合做フェ²。AI模型띠³開講session內底ホ³framework引炁カㇷ¹現現叫。提示，規則，カㇷ¹template攏深入整合띠³conversation flow內底。
+一種是嵌入式。Frameworkエ³logicカㇷ¹開講系統融合做フェ²。AI模型띠³開講session內底ホ³framework引炁カㇷ¹現現キㅗ³。提示，規則，カㇷ¹templateロㆁ深入整合띠³會話エ³流動內底。
 
 ## カㇷ¹傳統Framework共同運作 
 
