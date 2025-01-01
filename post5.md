@@ -283,4 +283,14 @@ This prompt-driven framework for **hello-world outputs** is modular and extensib
 4. **Guidelines** help users extend functionality with new verbs, arguments, roles, actions, and dynamic rules.
 ````
 
+### 實腹版
 
+若想ベㇷ¹띠³一个卡實腹エ³版本，エ³タㆁ²カ³ChatGPT提示コㆁ：
+
+"Generate a compact, fully functional version of the Hello-World framework without tutorials or guidelines—just the core folder structure, prompts, and rules for quick implementation."
+
+### frameworkエ³執行
+
+カ³Hello-World framework貼クェㇷ了後，用下腳エ³提示ホ³伊執行：
+
+"Execute the Hello-World framework."
