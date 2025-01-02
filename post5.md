@@ -128,6 +128,9 @@ Folder構造是你アㇴ¹ツァ˜カ³你エ³codeカㇷ¹資源띠³碟仔頂�
 - **Verb**: The action or greeting used to initiate the phrase.
 - **Argument**: The entity being addressed or referenced.
 - **Punctuation**: The specific punctuation that concludes the phrase.
+- **Code Format**: (Optional) Wraps the output in programming or markup syntax.
+
+---
 
 ### **2. Rules**
 The **Rules file** describes how to combine these prompts based on the grammatical structure, ensuring that the combinations form a meaningful output.
@@ -143,6 +146,7 @@ The **Rules file** describes how to combine these prompts based on the grammatic
         verb.md
         argument.md
         punctuation.md
+        code_format.md
     /Logic/
         rules.md
     /Examples/
@@ -158,21 +162,27 @@ Each **prompt** defines a **role** and contains relevant information for that ro
   ```markdown
   # Role: Verb
   - Action: Hello
-  - Variations: Hi, Goodbye
   ```
 
 - **`argument.md`**:
   ```markdown
   # Role: Argument
   - Subject: World
-  - Variations: Universe, Everyone
   ```
 
 - **`punctuation.md`**:
   ```markdown
   # Role: Punctuation
   - Type: Terminal
-  - Options: !, . , ,
+  - Options: !, ., ?
+  ```
+
+- **`code_format.md`** (New):
+  ```markdown
+  # Role: Code Format
+  - Python: `print("{{verb}} {{argument}}{{punctuation}}")`
+  - C: `printf("{{verb}} {{argument}}{{punctuation}}");`
+  - HTML: `<h1>{{verb}} {{argument}}{{punctuation}}</h1>`
   ```
 
 ---
@@ -186,23 +196,22 @@ The rules define how to combine the components into valid outputs.
   - `{{verb}} {{argument}}{{punctuation}}`
 
   # Constraints
-  - If punctuation is ',', lowercase the argument.
-  - Ensure spacing between components is consistent.
-  - Enforce capitalization for verbs and proper nouns unless specified otherwise.
+  - Ensure proper spacing and capitalization.
+  - Apply style variations or code formatting when specified.
   ```
 
 ---
 
 ## **Key Concepts**
 
-### **1. Verb as Method or Class**
-The **verb** is analogous to a method or class that defines the “action” and what kinds of arguments it needs.
+### **1. Verb as Method**
+The **verb** is analogous to a method that defines the “action” and what kinds of arguments it needs.
 
-### **2. Arguments as Objects or Values**
+### **2. Arguments as Objects**
 The **arguments** are like objects or values passed into that method, fulfilling the roles defined by the verb.
 
 ### **3. Composition as Function Execution**
-**Composition** is like instantiating or calling that method, substituting the arguments into the verb’s “template” to produce a complete, working instruction—just as providing parameters to a function call yields a result.
+**Composition** substitutes the arguments into the verb’s “template” to produce a complete, working message.
 
 ---
 
@@ -210,77 +219,76 @@ The **arguments** are like objects or values passed into that method, fulfilling
 Using this framework, the following outputs are valid:
 1. `Hello World!`
 2. `Hello, world.`
-
----
-
-## **How It Works**
-1. **Verb**: Always "Hello."
-2. **Argument**: Always "World."
-3. **Punctuation**: Choose either `!` or `,` (with lowercase "world" after the comma).
-
-### **Examples**:
-- Applying Rule 1: `"Hello World!"`\
-  Components:
-
-  - Verb: *Hello*
-  - Argument: *World*
-  - Punctuation: *!*
-
-- Applying Rule 2: `"Hello, world."`\
-  Components:
-
-  - Verb: *Hello*
-  - Argument: *world*
-  - Punctuation: *,*
+3. `Hello World?`
 
 ---
 
 ## **Guidelines for Extension**
 
-### **1. Adding Verbs**
-Users can introduce new verbs to extend the framework:
+### **1. Adding Punctuation**
+Introduce new terminal punctuation marks:
 
-- **`verb.md`**:
+- **`punctuation.md`**:
   ```markdown
-  # Role: Verb
-  - Action: Hello
-  - Variations: Hi, Goodbye
+  # Role: Punctuation
+  - Type: Terminal
+  - Options: !, ., ?, ...
   ```
 - **New Outputs**:
-  - `Hi World!`
-  - `Goodbye, world.`
-
-### **2. Adding Arguments**
-Expand the audience or entity being addressed:
-
-- **`argument.md`**:
-  ```markdown
-  # Role: Argument
-  - Subject: World
-  - Variations: Universe, Everyone
-  ```
-- **New Outputs**:
-  - `Hello Universe!`
-  - `Goodbye, Everyone.`
-
-### **3. Adding Examples**
-Provide example outputs in the examples folder:
-- **`basic_examples.md`**:
-  ```markdown
-  # Basic Examples
-  - Hello World!
-  - Hello, world.
-  - Hi Universe!
-  ```
+  - `Hello World?`
+  - `Hi, world...`
 
 ---
 
-## **Summary**
-This prompt-driven framework for **hello-world outputs** is modular and extensible:
-1. **Prompts** define roles (verb, subject, object) and relevant details.
-2. **Rules** ensure proper combination and enforce grammar.
-3. **Key concepts** map verbs to methods and arguments to parameters for compositional flexibility.
-4. **Guidelines** help users extend functionality with new verbs, arguments, roles, actions, and dynamic rules.
+### **2. Adding Styles**
+Allow for formatting variations such as uppercase, lowercase, or title case:
+
+- **`rules.md`** (Updated):
+  ```markdown
+  # Rules for Styles
+  - Uppercase: HELLO WORLD!
+  - Lowercase: hello world.
+  - Title Case: Hello World.
+  ```
+- **New Outputs**:
+  - `HELLO WORLD!`
+  - `hello world.`
+
+---
+
+### **3. Programmable Outputs**
+Generate outputs in programming or markup formats:
+
+- **`code_format.md`**:
+  ```markdown
+  # Role: Code Format
+  - Python: `print("{{verb}} {{argument}}{{punctuation}}")`
+  - C: `printf("{{verb}} {{argument}}{{punctuation}}");`
+  - HTML: `<h1>{{verb}} {{argument}}{{punctuation}}</h1>`
+  ```
+- **Examples**:
+  - Python: `print("Hello World!")`
+  - C: `printf("Hello World!");`
+  - HTML: `<h1>Hello World!</h1>`
+
+---
+
+## **Examples**
+
+### **Basic Examples**
+- `Hello World!`
+- `Hello, world.`
+- `Hello World?`
+
+### **Formatted Examples**
+- Uppercase: `HELLO WORLD!`
+- Lowercase: `hello world.`
+- Title Case: `Hello World.`
+
+### **Programmable Examples**
+- Python: `print("Hello World!")`
+- C: `printf("Hello World!");`
+- HTML: `<h1>Hello World!</h1>`
 ````
 
 ### 實腹版
@@ -294,3 +302,7 @@ This prompt-driven framework for **hello-world outputs** is modular and extensib
 カ³Hello-World framework貼クェㇷ了後，用下腳エ³提示ホ³伊執行：
 
 "Execute the Hello-World framework."
+
+アㇷ³シ³カ⁷ムㆁ⁷コㆁ
+
+"How can I interact with the framework?"
