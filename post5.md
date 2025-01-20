@@ -25,7 +25,7 @@ Correct! In the construction プロンプト駆動フレームワーク (puronpu
 
 ``` 
 
-Prompt-driven翻做台語是「ホ³提示驅動エ⁷」，「提示驅動エ⁷」，或者是「被提示驅動エ⁷」。被ジㇷ用띠³漢語或者是書面語，無ヒァ捷用。Prompt-driven framework翻做ホ³提示驅動エ⁷framework，或者是被提示驅動エ⁷framework，是シㅗ¹쿠ァロㅗ⁷ソㅗ，ㆬ³コㅗㇷ¹イ文法來コㆁ²是正確エ³。アㇷ¹コㅗㇷ¹提示驅動Framework是一个卡簡明エ⁷表達。另外一種表達是提示驅動型Framework。因為ケ⁷一个型ジㇷ，意思カㇷ¹prompt-driven frameworkマ³シㅗ¹쿠ァ有爭差。
+Prompt-driven翻做台語是「ホ³提示驅動エ⁷」，「提示驅動エ⁷」，或者是「被提示驅動的」。被ジㇷ用띠³漢語或者是書面語，無ヒァ捷用。Prompt-driven framework翻做ホ³提示驅動エ⁷framework，是シㅗ¹쿠ァロㅗ⁷ソㅗ，ㆬ³コㅗㇷ¹イ文法來コㆁ²是正確エ³。アㇷ¹コㅗㇷ¹提示驅動Framework是一个卡簡明エ⁷表達。另外一種表達是提示驅動型Framework。因為ケ⁷一个型ジㇷ，意思カㇷ¹prompt-driven frameworkマ³シㅗ¹쿠ァ有爭差。
 
 Frame是框エ³意思。Work是穡頭、카ㆁ⁷쿠ェ³エ³意思。Framework對台灣話來コㆁ²是新エ⁷概念，看ベㇷ¹アㇴ¹ツァ˜翻做台灣話，マ³타ㆁ⁷直接用外來語表達着好。
 
