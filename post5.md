@@ -2,7 +2,7 @@
 title: '提示驅動Framework紹介'
 description: 'introduction to prompt-driven framework'
 date: 2024-12-29
-tags: ['prompt', 'framework', 'ai']
+tags: ['prompt', 'framework', 'ai', 'translation']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
