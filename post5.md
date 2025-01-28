@@ -118,7 +118,7 @@ Folder構造是你アㇴ¹ツァ˜カ³你エ³codeカㇷ¹資源띠³碟仔頂�
 下腳是一个エ³印出"Hello, world."エ³提示驅動framework。伊타ㆁ⁷ツㇴ做一个起點，只要カ⁷copy過你エ³AI模型ヒァ，着エ³タㆁ²開始用ア⁷。
 
 ````markdown
-### **Prompt-Driven Framework for Hello-World Outputs**
+# **Prompt-Driven Framework for Hello-World Outputs**
 
 ---
 
@@ -160,26 +160,22 @@ Each **prompt** defines a **role** and contains relevant information for that ro
 
 - **`verb.md`**:
   ```markdown
-  # Role: Verb
-  - Action: Hello
+  # Action: Hello
   ```
-
+  
 - **`argument.md`**:
   ```markdown
-  # Role: Argument
-  - Subject: World
+  # Subject: World
   ```
 
 - **`punctuation.md`**:
   ```markdown
-  # Role: Punctuation
-  - Type: Terminal
+  # Type: Terminal
   - Options: !, ., ?
   ```
 
 - **`code_format.md`** (New):
   ```markdown
-  # Role: Code Format
   - Python: `print("{{verb}} {{argument}}{{punctuation}}")`
   - C: `printf("{{verb}} {{argument}}{{punctuation}}");`
   - HTML: `<h1>{{verb}} {{argument}}{{punctuation}}</h1>`
