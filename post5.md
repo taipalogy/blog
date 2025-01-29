@@ -6,7 +6,7 @@ tags: ['prompt', 'framework', 'ai', 'translation']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
-draft: true
+draft: false
 ---
 
 提示驅動Frameworkエ³英文是Promp-Driven Framework。一般來コㆁ²，アㇴ¹ネ翻是無問題。日本話是コㆁ¹プロンプト駆動フレームワーク。英語エ³driven是被動形。
