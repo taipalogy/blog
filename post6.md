@@ -94,7 +94,7 @@ ROOT: Team
 
 "Taiwan"是"Team"エ³修飾語。
 
-續ロㅗㇷラィㇷ是一个複合動詞，"習い始めました"，翻做台語是開始學エ³意思：
+續ロㅗㇷラィㇷ是一个複合動詞，"習い始めました"，翻做台語是開始學エ³意思，翻做英語是"I began to learn."，アㇷ³是"I have started to learn."：
 
 ---
 ### **1. Tree-Based Parsing**  
