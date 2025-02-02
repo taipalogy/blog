@@ -58,7 +58,7 @@ A Pencil + Imagination = A Story
 ---
 ````
 
-頭一个例文是"Hard Work + Talent = Success"。直譯是"Hard Work plus Talent equals Success."，骨力加上才能等於成功。通譯是"When Hard Work meets Talent, the result is Success."，骨力カㇷ¹才能シㅗ⁷뚜²エ³時，結果是成功。
+頭一个例文是"Hard Work + Talent = Success"。直譯（提示內底エ³First Interpretation）是"Hard Work plus Talent equals Success."，骨力加上才能等於成功。通譯（提示內底エ³Second Interpretation）是"When Hard Work meets Talent, the result is Success."，骨力カㇷ¹才能シㅗ⁷뚜²エ³時，結果是成功。
 
 續ロㅗㇷラィㇷ是物理學エ³例文"F = m * a"。直譯是"F equals m times a."，F等於m乘a。通譯是"When mass is combined with acceleration, the outcome is force (F)."，質量ハㇺ³加速度タゥ³키ㇷラィㇷ産生추ッ¹力。
 
