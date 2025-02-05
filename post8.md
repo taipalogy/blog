@@ -91,10 +91,10 @@ Knowledge + Experience = Wisdom
 
 ````
 
-頭一个例文是"Steel + Fire = A Sword"。字面通譯（提示內底エ³First Interpretation）是"Steel plus Fire equals A Sword"，鋼加上火等於一枝劍。推論通譯（提示內底エ³Second Interpretation）是"The application of Fire to Steel produces A Sword"，カ³火應用カゥ²鋼エ³産生一枝劍。上下文通譯（提示內底エ³Third Interpretation）是"Weapons of strength and precision (A Sword) come from fusing an unyielding raw material (Steel) with intense heat (Fire)."，精密有力エ⁷武器是對屈強原材料カㇷ¹激烈火エ³融合來エ⁷。
+頭一个例文是"Steel + Fire = A Sword"。字面通譯（提示內底エ³First Interpretation）エ³讀法是"Steel plus Fire equals A Sword"，鋼加上火等於一枝劍。推論通譯（提示內底エ³Second Interpretation）エ³讀法是"The application of Fire to Steel produces A Sword"，カ³火應用カゥ²鋼エ³産生一枝劍。上下文通譯（提示內底エ³Third Interpretation）エ³讀法是"Weapons of strength and precision (A Sword) come from fusing an unyielding raw material (Steel) with intense heat (Fire)."，精密有力エ⁷武器是對屈強原材料カㇷ¹激烈火エ³融合來エ⁷。
 
-第二个例文是"Vision + Resources = Innovation"。字面通譯是"Vision plus Resources equals Innovation"，願景加上資源等於創新。推論通譯是"Vision combined with Resources results in Innovation"。上下文通譯是"Innovative outcomes arise from the interplay between a creative, future-oriented perspective (Vision) and the deployment of supporting elements (Resources)."，創新是創意エ⁷、未來取向エ³視角カㇷ¹支援要素エ³配置之間相互作用エ³成果。
+第二个例文是"Vision + Resources = Innovation"。字面通譯エ³讀法是"Vision plus Resources equals Innovation"，願景加上資源等於創新。推論通譯エ³讀法是"Vision combined with Resources results in Innovation"。上下文通譯エ³讀法是"Innovative outcomes arise from the interplay between a creative, future-oriented perspective (Vision) and the deployment of supporting elements (Resources)."，創新是創意エ⁷、未來取向エ³視角カㇷ¹支援要素エ³配置之間相互作用エ³成果。
 
-第三个例文是"Curiosity + Exploration = Discovery"。字面通譯是"Curiosity plus Exploration equals Discovery."，好玄加上探險等於發見。推論通譯是"Curiosity's influence on Exploration produces the outcome of Discovery."，好玄對探險エ³影響エ³産生發見エ³成果。上下文通譯是"The process of actively seeking knowledge (Exploration) driven by a desire to learn (Curiosity) gives rise to significant advancements in understanding (Discovery)."，ホ³學習欲望驅動エ⁷積極走尋智識過程エ³カ³理解エ³重大進步짜ㇷラィㇷ。
+第三个例文是"Curiosity + Exploration = Discovery"。字面通譯エ³讀法是"Curiosity plus Exploration equals Discovery."，好玄加上探險等於發見。推論通譯エ³讀法是"Curiosity's influence on Exploration produces the outcome of Discovery."，好玄對探險エ³影響エ³産生發見エ³成果。上下文通譯エ³讀法是"The process of actively seeking knowledge (Exploration) driven by a desire to learn (Curiosity) gives rise to significant advancements in understanding (Discovery)."，ホ³學習欲望驅動エ⁷積極走尋智識エ³過程エ³カ³理解エ³重大進步짜ㇷラィㇷ。
 
-第四个例文是"A Seed + Water = A Flower"。字面通譯是"A Seed plus Water equals A Flower."，推論通譯是"A Seed bathed in Water crystallizes as A Flower"，一粒浸水エ³種子結晶化成做一蕊花。上下文通譯是"A Seed, when nourished by Water, transforms into A Flower."，一粒種子，ホ³水滋養エ³時，變身做一蕊花。
+第四个例文是"A Seed + Water = A Flower"。字面通譯エ³讀法是"A Seed plus Water equals A Flower."，推論通譯エ³讀法是"A Seed bathed in Water crystallizes as A Flower"，一粒浸水エ³種子結晶化成做一蕊花。上下文通譯エ³讀法是"A Seed, when nourished by Water, transforms into A Flower."，一粒種子，ホ³水滋養エ³時，變身做一蕊花。

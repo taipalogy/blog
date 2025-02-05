@@ -58,12 +58,12 @@ A Pencil + Imagination = A Story
 ---
 ````
 
-頭一个例文是"Hard Work + Talent = Success"。字面通譯（提示內底エ³First Interpretation）是"Hard Work plus Talent equals Success."，骨力加上才能等於成功。推論通譯（提示內底エ³Second Interpretation）是"When Hard Work meets Talent, the result is Success."，骨力カㇷ¹才能シㅗ⁷뚜²エ³時，結果是成功。
+頭一个例文是"Hard Work + Talent = Success"。字面通譯（提示內底エ³First Interpretation）エ³讀法是"Hard Work plus Talent equals Success."，骨力加上才能等於成功。推論通譯（提示內底エ³Second Interpretation）エ³讀法是"When Hard Work meets Talent, the result is Success."，骨力カㇷ¹才能シㅗ⁷뚜²エ³時，結果是成功。
 
-續ロㅗㇷラィㇷ是物理學エ³例文"F = m * a"。字面通譯是"F equals m times a."，F等於m乘a。推論通譯是"When mass is combined with acceleration, the outcome is force (F)."，質量ハㇺ³加速度タゥ³키ㇷラィㇷ産生추ッ¹力。
+續ロㅗㇷラィㇷ是物理學エ³例文"F = m * a"。字面通譯エ³讀法是"F equals m times a."，F等於m乘a。推論通譯エ³讀法是"When mass is combined with acceleration, the outcome is force (F)."，質量ハㇺ³加速度ホㆁ⁵組合키ㇷラィㇷエ³時，結果是力。
 
-續ロㅗㇷラィㇷ是化學エ³例文"2H2 + O2 = 2H2O"。字面通譯是"Two molecules of hydrogen (H2) plus one molecule of oxygen (O2) equals two molecules of water (H2O)."，二个水素分子加上一个酸素分子等於二个水分子。推論通譯是"The combination of two hydrogen molecules with one oxygen molecule results in the formation of two water molecules."，二个水素分子カㇷ¹一个酸素分子サ˜⁷カㇷ゚結果是形成二个水分子。
+續ロㅗㇷラィㇷ是化學エ³例文"2H2 + O2 = 2H2O"。字面通譯エ³讀法是"Two molecules of hydrogen (H2) plus one molecule of oxygen (O2) equals two molecules of water (H2O)."，二个水素分子加上一个酸素分子等於二个水分子。推論通譯エ³讀法是"The combination of two hydrogen molecules with one oxygen molecule results in the formation of two water molecules."，二个水素分子カㇷ¹一个酸素分子エ³組合結果是形成二个水分子。
 
-續ロㅗㇷラィㇷ是數學エ³例文"3 + 5 = 8"。字面通譯是"Three plus five equals eight."，3加上5等於8。推論通譯是"The total of three and five is eight."，3カㇷ¹5ロㆁ¹쩌ㆁ²是8。
+續ロㅗㇷラィㇷ是數學エ³例文"3 + 5 = 8"。字面通譯エ³讀法是"Three plus five equals eight."，3加上5等於8。推論通譯エ³讀法是"The total of three and five is eight."，3カㇷ¹5ロㆁ¹쩌ㆁ²是8。
 
-續ロㅗㇷラィㇷ是使用者界面エ³例文"Text + Box = Textbox"。字面通譯是"Text plus Box equals Textbox."，文本加上盒仔等於文本盒仔。推論通譯是"The equation shows that combining Text and Box creates an interactive textbox for user interfaces."，チッ¹エ⁷等式表現出文本カㇷ¹盒仔カㇷ゚¹做伙創造一个互動エ⁷文本盒仔ホ³使用者界面。
+續ロㅗㇷラィㇷ是使用者界面エ³例文"Text + Box = Textbox"。字面通譯エ³讀法是"Text plus Box equals Textbox."，文本加上盒仔等於文本盒仔。推論通譯エ³讀法是"The equation shows that combining Text and Box creates an interactive textbox for user interfaces."，チッ¹エ⁷等式表現出カ³文本カㇷ¹盒仔組合做伙創造一个互動エ⁷文本盒仔ホ³使用者界面。
