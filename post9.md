@@ -9,12 +9,12 @@ authors: ["台灣話專科"]
 draft: true
 ---
 
-文作成エ³意思着是sentence composing，イァ³着是作文。動詞Compose有作詩，作曲エ³意思。ラㇴベㇷ¹用文作成framework來解說提示驅動framework是アㇴ¹ツァ˜運作エ³。ラㇴ所ベㇷ¹作エ³文是英文エ⁷`"A {person} carries a {bag}."`。利用チッ¹个構文（sentence structure）
+文作成エ³意思着是sentence composing，イァ³着是作文。動詞Compose有作詩，作曲エ³意思。ラㇴベㇷ¹用文作成framework來解說提示驅動framework是アㇴ¹ツァ˜運作エ³。ラㇴ所ベㇷ¹作エ³文是英文エ⁷`"A {person} carries a {bag}."`。利用チッ¹个文構造（sentence structure）
 來作文，所産生エ⁷文嘛뚜¹ア¹好是例文。
 
 提示驅動framework是以動詞エ³項構造コㅗㇷ¹加上folder構造來實現エ⁷，動詞カㇷ¹項ベㇷ¹アㇴ¹ツァ˜互動嘛寫띠³規則内底。テカㇷ¹AI互動エ³時ツㇴ⁷，若ベㇷ¹對AI做提示，他動詞需要目的語（受詞）來執行一个動作，自動詞着無需要目的語。피¹喻コㆁ，我定定對AI下エ⁷提示是英文`Show an example`，其中"show"是他動詞，"an example"是直接目的語。AI看着チッ¹句`Show an example`着エ³カ³一个例輸出ホ³使用者看。
 
-㒰款嘛是對AI做提示。チッ¹个文作成framework利用英文`Compose a sentence`來作一个固定エ⁷構文`"A {person} carries a {bag}."`。㒰款"compose"是他動詞，"a sentence"是直接目的語。AI看着チッ¹句`Compose a sentence`，着エ³カ³一个例文輸出ホ³使用者看。피¹喻コㆁ，`"A man carries a briefcase."`，意思是一个查甫紮一个かばん。
+㒰款嘛是對AI做提示。チッ¹个文作成framework利用英文`Compose a sentence`來作一个固定エ⁷文構造`"A {person} carries a {bag}."`。㒰款"compose"是他動詞，"a sentence"是直接目的語。AI看着チッ¹句`Compose a sentence`，着エ³カ³一个例文輸出ホ³使用者看。피¹喻コㆁ，`"A man carries a briefcase."`，意思是一个查甫紮一个かばん。
 
 下脚是利用ChatGPT産生エ⁷prompt:
 ````
@@ -173,4 +173,4 @@ A scientist carries a backpack with a laptop inside.
 
 ## 應用
 
-任何一个文，一篇文，不管是長文，短文，文章，ブログ文，퍼⁷文，發文，廢文，論文，URL，只要其中有需要改變エ³語詞アㇷ³是句段，ロㆁエ³タㆁ²用チッ¹種方法來産生你需要エ³構文。像`"A {person} carries a {bag}"`チッ¹个構文，內底エ³`{person}`カㇷ¹`{bag}`是placeholder，着是需要改變エ³所在。AI圖內底若有ベㇷ¹添文字키ㇷリㇷエ³所在嘛是エ³タㆁ²用チッ¹个方法。
+任何一个文，一篇文，不管是長文，短文，文章，ブログ文，퍼⁷文，發文，廢文，論文，URL，HTML，程式碼，只要其中有需要改變エ³語詞アㇷ³是句段，ロㆁエ³タㆁ²用チッ¹種方法來産生你需要エ³文構造。像`"A {person} carries a {bag}"`チッ¹个文構造，內底エ³`{person}`カㇷ¹`{bag}`是placeholder，着是需要改變エ³所在。AI圖內底若有ベㇷ¹添文字키ㇷリㇷエ³所在嘛是エ³タㆁ²用チッ¹个方法。
