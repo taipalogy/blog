@@ -1,6 +1,6 @@
 ---
-title: '咖啡製作操作式Framework'
-description: 'coffee making operation formula framework'
+title: '操作式咖啡製作Framework'
+description: 'coffee making framework with operation formula'
 date: 2025-03-28
 tags: ['prompt', 'framework', 'ai']
 image: ""
@@ -9,7 +9,7 @@ authors: ["台灣話專科"]
 draft: true
 ---
 
-操作式Framework是名詞語組Operation Formula Frameworkエ³翻譯。チッ¹个用語カㇷ¹翻譯當然차ㇺ³AI討論了後チァㇷ¹決定エ⁷。
+操作式Framework是名詞語組Framework with Operation Formulaエ³翻譯。チッ¹个用語カㇷ¹翻譯當然차ㇺ³AI討論了後チァㇷ¹決定エ⁷。
 
 一个操作式Frameworkエ³運作，若是以文作成來做類比，着是愛決定コㆁ一个動詞カㇷ¹一个名詞若俦起來是ベㇷ¹アㇴ¹ツァ˜連動運作。連動運作チッ¹句話當然是有小쿠ァ機械性エ³意味띠³內底。타ㆁ⁷ホㆁ⁷俦起來エ³動詞ハㇺ³名詞，以一个formulaエ³形式ホ³使用者操作。チッ¹種타ㆁ⁷ホ³使用者操作エ³formula着是號做操作式，イァ³着是operation formula。
 
@@ -77,6 +77,20 @@ Make是原形，代表動作エ³初始化。
 Making是動名詞，利用語尾-ing表示進行中。
 
 Made是過去分詞，利用語尾-ed表示動作完成。
+
+## 排列組合
+
+問AI
+
+`What are the combining permutations of "coffee + milk"?`
+
+回答是4乘5是20。
+
+問AI
+
+`What are the combining permutations of "make + coffee" with valency of 2 excluded?`
+
+回答是3乘4等於12。
 
 ## 衍生應用
 
