@@ -6,7 +6,7 @@ tags: ['prompt', 'framework', 'ai']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
-draft: true
+draft: false
 ---
 
 Image editing是一種電腦軟體エ³應用。日本話是コㆁ畫像編集，ア中國話是コㆁ影像編輯。Image着是像，畫像，影像，形像等等。치ゥ˜³コㆁ添文字，改色，畫圓箍仔，畫箭頭，改背景等等，ロㆁ是image編輯エ³功能。AI時代エ³image編輯是看ベㇷ¹叫AI做啥乜代志着對AI下提示。피¹喻コㆁ`Add a white flower next to the bottle`，`Remove the watermarks`，`Create an image of a horse.`等等。チッ¹款提示嘛타ㆁ⁷コㆁ是對AIエ³命令。

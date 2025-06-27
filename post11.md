@@ -6,7 +6,7 @@ tags: ['prompt', 'framework', 'ai']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
-draft: true
+draft: false
 ---
 
 Formatエ³意思是カ³一種物件用特殊エ⁷方法呈現出來アㇷ³是安排ホ⁷好，尤其是以一種有組織エ³アㇷ³是有順序有規律エ⁷樣態。

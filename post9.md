@@ -6,7 +6,7 @@ tags: ['prompt', 'framework', 'ai']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
-draft: true
+draft: false
 ---
 
 文作成エ³意思着是sentence composing，イァ³着是作文。動詞Compose有作詩，作曲エ³意思。ラㇴベㇷ¹用文作成framework來解說提示驅動framework是アㇴ¹ツァ˜運作エ³。ラㇴ所ベㇷ¹作エ³文是英文エ⁷`"A {person} carries a {bag}."`。利用チッ¹个文構造（sentence structure）

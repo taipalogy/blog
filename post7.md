@@ -6,7 +6,7 @@ tags: ['equation', 'ai']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
-draft: true
+draft: false
 ---
 
 Implicit operator overloading（インプリシットオペレーターオーバーロード）エ³概念是對程式語言來エ⁷。若是カ³伊用띠³自然語言處理エ³領域，着是レ做單文カㇷ¹等式（equation）解析エ³時ツㇴ⁷，エ³키牽涉着看是ベㇷ¹カ³operator解讀做構造要素アㇷ³是語義關係。AI타ㆁ⁷處理單文，マ³エ³用得處理等式，甚至是單文ハㇺ³等式エ³互相表達轉述。

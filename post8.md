@@ -6,7 +6,7 @@ tags: ['equation', 'ai']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
-draft: true
+draft: false
 ---
 
 Operand overriding(オペランドオーバーライド)カㇷ¹implicit operator overloading㒰款是對程式語言來エ⁷概念。伊是指operand有能力基於各種上下文因素키動態調整伊エ³意思。띠³程式語言エ³分野，operand overriding通常是用polymorphism來實作。

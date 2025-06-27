@@ -6,7 +6,7 @@ tags: ['prompt', 'framework', 'ai']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
-draft: true
+draft: false
 ---
 
 操作式Framework是名詞語組Framework with Operation Formulaエ³翻譯。チッ¹个用語カㇷ¹翻譯當然차ㇺ³AI討論了後チァㇷ¹決定エ⁷。
