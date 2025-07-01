@@ -208,10 +208,8 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 
 ---
 
-### **Dynamic Interaction**
-- For input *"help"*, the system uses semantic parsing to display contextual guidance. For instance:  
-  *"For 'make + coffee,' options include adding milk, specifying brewing style, or tailoring flavor."*
-
+### **Coffee Help**
+- For input *"help"* or *"help [operation formula]"* (e.g., "help make coffee"), the system uses semantic parsing to display contextual guidance.
 ---
 ````
 

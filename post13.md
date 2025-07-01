@@ -274,10 +274,11 @@ Suggestions for 'let + genre("sci-fi") +':
 
 建議器是運作治操作式チッ¹緣。
 
-## Movie-Selecting Framework
+## 電影選擇Framework
 
 ChatGPT加上Grok産生
 ````markdown
+---
 # Movie-Selecting Framework
 
 ## Folder Structure
@@ -535,5 +536,6 @@ Valency rules from /Verbs/ determine how verbs compose
 Intermediate results may be named (e.g., candidate_movies, filtered_movies)  
 Use let to bind reusable subresults  
 Refer to /Rules/operation_formula.md for chaining logic and semantics  
+---
 ````
 
