@@ -95,7 +95,7 @@ Types of Shorthand in SCL
 
 ChatGPT産生
 ```
-🧩 4. Interactive Exploration (Branch + Merge)
+4. Interactive Exploration (Branch + Merge)
 
 Breadcrumb Flow:
 
@@ -103,53 +103,36 @@ Home → Movies → Sci-fi → Thought-provoking → Netflix
                                    ↘ Runtime: Short (<90m)
                                         ↘ Tone: Dark
                                               ↘ Compare with: Apple TV+
-
-
-🔗 Prompt Chain:
-
-Each refinement is its own step:
-
-* “List sci-fi movies on Netflix.”
-* “Filter by tone: thought-provoking.”
-* “Now filter by runtime < 90m.”
-* “Among those, highlight the ones with darker tones.”
-* “Find 3 on Apple TV+ with similar tone and runtime.”
 ```
 
 最後カ³feedback loop接키ㇷリㇷ，着變做下腳アㇴ¹ネ，有解析step，コㅗㇷ¹有Lisp code:
 
 Copilot産生
 ```
-🔶 1. Sequential Filtering
-
+1. Sequential Filtering  
 Start by narrowing the movie pool step by step:
-
-1. recommend + user → candidate_movies
-2. filter + genre("sci-fi") + platform("netflix") → netflixscifi
-3. filter + tone("thought-provoking") + netflixscifi → thoughtful_pool
+- 1. recommend + user → candidate_movies  
+- 2. filter + genre("sci-fi") + platform("netflix") → netflixscifi  
+- 3. filter + tone("thought-provoking") + netflixscifi → thoughtful_pool  
 
 ---
 
-🔶 2. Branching & Merge
-
+2. Branching & Merge  
 Explore two refinement paths in parallel and recombine:
-
-4. filter + runtime<90 + thoughtfulpool → shortbranch
-5. filter + tone("dark") + thoughtfulpool → darkbranch
-6. merge(shortbranch, darkbranch) → mergedfocuspool
+- 4. filter + runtime<90 + thoughtfulpool → shortbranch  
+- 5. filter + tone("dark") + thoughtfulpool → darkbranch  
+- 6. merge(shortbranch, darkbranch) → mergedfocuspool  
 
 ---
 
-🔶 3. Feedback Loop: Actor Preference
-
+3. Feedback Loop: Actor Preference  
 Incorporate user affinity for Jennifer Lawrence:
-
-7. rate(mergedfocuspool) → detect user preference
-8. filter + actor("Jennifer Lawrence") + mergedfocuspool → jlawpreferredpool
+- 7. rate(mergedfocuspool) → detect user preference  
+- 8. filter + actor("Jennifer Lawrence") + mergedfocuspool → jlawpreferredpool  
 
 ---
 
-🧠 Final Lisp-Style Composition
+Final Lisp-Style Composition
 
 `lisp
 (let* (
@@ -166,6 +149,17 @@ Incorporate user affinity for Jennifer Lawrence:
   result)
 `
 ```
+
+### 逐カィ²エ³條件追加(Sequential Filter Refinement)
+
+序列式過濾是一種逐カィ²追加條件エ⁷過濾。逐カィ²エ³使用者提示ロㆁ以漸進方式カ³結果集窄化。譬喻広:
+
+* “List sci-fi movies on Netflix.” → 基本結果集
+* “Filter by tone: thought-provoking.” → カ⁷窄化
+* “Now filter by runtime < 90m.” → 進一步カ⁷精鍊
+* “Highlight the ones with darker tones.” → 最終精鍊
+
+쩨着是絞り込みサーチ検索(Refined Search)エ³核心，逐漸施加有層次エ³條件。不知台灣話是不是エ³用エカ⁷翻譯做絞入式搜尋檢索。
 
 ### カ³解析Step印추ァィㇷ
 
