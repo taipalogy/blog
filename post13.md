@@ -156,8 +156,8 @@ Final Lisp-Style Composition
 
 * “List sci-fi movies on Netflix.” → 基本結果集
 * “Filter by tone: thought-provoking.” → カ⁷窄化
-* “Now filter by runtime < 90m.” → 進一步カ⁷精鍊
-* “Highlight the ones with darker tones.” → 最終精鍊
+* “Now filter by runtime < 90m.” → 進一步カ⁷精煉
+* “Highlight the ones with darker tones.” → 最終精煉
 
 쩨着是絞り込みサーチ検索(Refined Search)エ³核心，逐漸施加有層次エ³條件。不知台灣話是不是エ³用エカ⁷翻譯做絞入式搜尋檢索。
 
@@ -260,7 +260,7 @@ Suggestions for 'let + genre("sci-fi") +':
 (platform "netflix" (genre "sci-fi"))
 ```
 
-建議器コㅗㇷ¹根據updateエ³上下文(sci-fi movies on Netflix)獻出精鍊エ⁷しあげ:
+建議器コㅗㇷ¹根據updateエ³上下文(sci-fi movies on Netflix)獻出精煉エ⁷しあげ:
 ```
 - tone("dark")
 - runtime<90
