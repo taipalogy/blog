@@ -144,7 +144,7 @@ Final Lisp-Style Composition
   (merged (merge short-branch dark-branch))
   (jlaw-filtered (filter actor("Jennifer Lawrence") merged))
   (apple-tv (filter platform("apple tv+") (filter tone("dark") (filter runtime<90 (recommend user)))))
-  (result (compareTo apple-tv jlaw-filtered))
+  (result (compare apple-tv jlaw-filtered))
 )
   result)
 `
@@ -192,14 +192,14 @@ Compare with: Apple TV+
 
     ↓ (parsed into structured symbolic operations)
 
-[ 3. Symbolic Form ]   ← 🧩 Operation formulas are defined and applied here
+[ 3. Symbolic Form ]   ←  Operation formulas are defined and applied here
 let + recommend + user  
     + filter + genre("sci-fi")  
     + filter + tone("thought-provoking")  
     + filter + platform("netflix")  
     + branch(filter + runtime<90, filter + tone("dark"))  
     + merge  
-    + compareTo(platform("apple tv+"))
+    + compare(platform("apple tv+"))
 
     ↓ (converted into executable computation structure)
 
@@ -211,7 +211,7 @@ let + recommend + user
       (short (runtime<90 base))
       (dark (tone "dark" base))
       (merged (merge short dark)))
-  (compareTo (platform "apple tv+") merged))
+  (compare (platform "apple tv+") merged))
 
 ```
 
@@ -362,7 +362,8 @@ rate movie with user
 
 ## /Verbs/merge.md
 
-Verb: merge  
+Verb: merge 
+Valency: 2 or more 
 Combines results from parallel filter branches.  
 
 Example:  
@@ -370,11 +371,12 @@ merge(short, dark)
 
 ## /Verbs/compare.md
 
-Verb: compareTo  
-Used to compare result sets (e.g., between platforms or tones).  
+Verb: compare
+Valency: 2
+Used to compare result sets, movies, or attributes. Symmetric comparison.
 
-Example:  
-compareTo("Palm Springs", candidates)  
+Example:
+compare(platform("netflix"), platform("apple tv+"))
 
 ## /Nouns/user.md
 
@@ -468,10 +470,10 @@ filter + runtime<90 → short movies
 
 Branch + Merge:  
 let + A + branch(B, C) + merge → intersected result  
-let + base + compareTo(other_set)  
+let + base + compare(other_set)  
 
 Symbolic Chain Composition:  
-let + A + B + C + branch(...) + merge + compareTo(...) → Lisp-equivalent nested evaluation  
+let + A + B + C + branch(...) + merge + compare(...) → Lisp-equivalent nested evaluation  
 
 ## /Templates/prompt_templates.md
 
@@ -489,11 +491,11 @@ recommend + user + filter + select
 Symbolic Chain Composition:  
 genre(...) + platform(...) + tone(...)  
 let + moodToGenre("uplifting") + platform(...) + runtime<90  
-let + analyze("Palm Springs") + themeMatch + toneShift(...) + platform(...) + compareTo(...)  
+let + analyze("Palm Springs") + themeMatch + toneShift(...) + platform(...) + compare(...)  
 
 Branch + Merge Templates:  
 let + A + branch(B, C) + merge  
-let + A + platform(...) + compareTo(...)  
+let + A + platform(...) + compare(...)  
 
 ## /SemanticParsingLayer/suggestor.md
 
@@ -508,7 +510,7 @@ Suggestions:
 - platform(...)  
 - tone(...)  
 - filter(...)  
-- compareTo(...)  
+- compare(...)  
 
 ## /SemanticParsingLayer/parser.md
 
