@@ -1,6 +1,6 @@
 ---
 title: '利用Shorthand來對語義作成語言做操作'
-description: ''
+description: 'Use Shorthand to Operate on Semantic Composition Language'
 date: 2025-06-27
 tags: ['prompt', 'framework', 'ai', 'shorthand', 'scl']
 image: ""
