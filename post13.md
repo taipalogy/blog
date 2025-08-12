@@ -515,7 +515,7 @@ Suggestions:
 ## /SemanticParsingLayer/parser.md
 
 Semantic Parser  
-Converts symbolic + composition into Lisp-style tree  
+Converts symbolic `+` composition into Lisp-style tree  
 Supports binding, branching, and merge evaluation  
 Also generates human-readable parsing steps  
 
@@ -531,9 +531,9 @@ Lisp Translation:
 (let ((x (filter (recommend user))))  
   (select x))  
 
-## Parsing Steps (Symbolic → Lisp)
+Parsing Steps (Symbolic → Lisp):
 
-Each + implies function application (right-to-left nesting)  
+Each `+` implies function application (right-to-left nesting)  
 Valency rules from /Verbs/ determine how verbs compose  
 Intermediate results may be named (e.g., candidate_movies, filtered_movies)  
 Use let to bind reusable subresults  
