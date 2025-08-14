@@ -278,266 +278,192 @@ Suggestions for 'let + genre("sci-fi") +':
 
 ChatGPT加上Grok産生
 ````markdown
+
 ---
+
 # Movie-Selecting Framework
 
 ## Folder Structure
 
-```
-/Framework/
-/Verbs/
-recommend.md
-select.md
-filter.md
-rate.md
-merge.md
-compare.md
-/Nouns/
-user.md
-movie.md
-genre.md
-actor.md
-rating.md
-platform.md
-tone.md
-runtime.md
-award.md
-/Rules/
-operation_formula.md
-/Templates/
-prompt_templates.md
-/SemanticParsingLayer/
-suggestor.md
-parser.md
-```
+* Framework/
 
-## /Verbs/recommend.md
+  * Verbs/: recommend.md, select.md, filter.md, rate.md, merge.md, compare.md
+  * Nouns/: user.md, movie.md, genre.md, actor.md, rating.md, platform.md, tone.md, runtime.md, award.md
+  * Rules/: operation_formula.md
+  * Templates/: prompt_templates.md
+  * SemanticParsingLayer/: suggestor.md, parser.md
 
-Verb: recommend  
-Valency: 1 or 2  
-Used to retrieve candidate movies for a user.  
-
-Examples:  
-recommend + user  
-recommend + user + filter  
-
-## /Verbs/select.md
-
-Verb: select  
-Valency: 1  
-Selects final choice from a filtered list.  
-
-Examples:  
-select from recommendation  
-recommend + user + filter + select  
-
-## /Verbs/filter.md
-
-Verb: filter  
-Valency: 1  
-Narrows down movie sets by attributes.  
-
-Filterable Attributes:  
-- genre  
-- actor  
-- tone  
-- runtime  
-- platform  
-- award  
-
-Examples:  
-filter + genre  
-recommend + user + filter + runtime<90  
-filter + tone:dark  
-
-## /Verbs/rate.md
-
-Verb: rate  
-Valency: 1  
-Assigns a score or evaluation to a movie.  
-
-Examples:  
-rate movie  
-rate movie with user  
-
-## /Verbs/merge.md
-
-Verb: merge 
-Valency: 2 or more 
-Combines results from parallel filter branches.  
-
-Example:  
-merge(short, dark)  
-
-## /Verbs/compare.md
-
-Verb: compare
-Valency: 2
-Used to compare result sets, movies, or attributes. Symmetric comparison.
-
-Example:
-compare(platform("netflix"), platform("apple tv+"))
-
-## /Nouns/user.md
-
-Noun: user  
-Represents an individual or profile with preferences.  
-
-Examples:  
-user:John  
-user:anonymous  
-
-## /Nouns/movie.md
-
-Noun: movie  
-Represents a film entity.  
-
-Examples:  
-movie:"Inception"  
-movie:"The Matrix"  
-
-## /Nouns/genre.md
-
-Noun: genre  
-Examples:  
-sci-fi  
-drama  
-comedy  
-
-## /Nouns/actor.md
-
-Noun: actor  
-Examples:  
-Leonardo DiCaprio  
-Emma Stone  
-Keanu Reeves  
-
-## /Nouns/rating.md
-
-Noun: rating  
-Examples:  
-8.5  
-PG-13  
-R  
-
-## /Nouns/platform.md
-
-Noun: platform  
-Examples:  
-netflix  
-hulu  
-apple tv+  
-prime video  
-
-## /Nouns/tone.md
-
-Noun: tone  
-Examples:  
-thought-provoking  
-dark  
-uplifting  
-
-## /Nouns/runtime.md
-
-Noun: runtime  
-Expressed as numeric duration or constraints  
-
-Examples:  
-runtime<90  
-runtime<120  
-
-## /Nouns/award.md
-
-Noun: award  
-Examples:  
-oscar  
-bafta  
-cannes  
-
-## /Rules/operation_formula.md
-
-Operation Formulas  
-
-Sequential Recommendation Chain:  
-genre("sci-fi") + platform("netflix") → filtered_movies  
-recommend + user + filter → filtered_movies  
-recommend + user + filter + select → final_choice  
-
-Filtering Logic:  
-filter + genre → subset by genre  
-filter + tone → subset by mood  
-filter + runtime<90 → short movies  
-
-Branch + Merge:  
-let + A + branch(B, C) + merge → intersected result  
-let + base + compare(other_set)  
-
-Symbolic Chain Composition:  
-let + A + B + C + branch(...) + merge + compare(...) → Lisp-equivalent nested evaluation  
-
-## /Templates/prompt_templates.md
-
-User-Facing Shorthand:  
-Home → Movies → Sci-fi → Thought-provoking → Netflix →  
-Branch 1: Runtime: Short (<90m) →  
-Branch 2: Tone: Dark →  
-Merge →  
-Compare with: Apple TV+  
-
-Framework Shorthand:  
-let + recommend + user  
-recommend + user + filter + select  
-
-Symbolic Chain Composition:  
-genre(...) + platform(...) + tone(...)  
-let + moodToGenre("uplifting") + platform(...) + runtime<90  
-let + analyze("Palm Springs") + themeMatch + toneShift(...) + platform(...) + compare(...)  
-
-Branch + Merge Templates:  
-let + A + branch(B, C) + merge  
-let + A + platform(...) + compare(...)  
-
-## /SemanticParsingLayer/suggestor.md
-
-Suggestor Logic  
-Parses symbolic chain fragments  
-Uses valency + rule matching from operation_formula.md  
-Suggests completions based on current chain state  
-
-Example:  
-Input: genre("sci-fi") +  
-Suggestions:  
-- platform(...)  
-- tone(...)  
-- filter(...)  
-- compare(...)  
-
-## /SemanticParsingLayer/parser.md
-
-Semantic Parser  
-Converts symbolic `+` composition into Lisp-style tree  
-Supports binding, branching, and merge evaluation  
-Also generates human-readable parsing steps  
-
-Example:  
-Input: recommend + user + filter + select  
-
-Parsing Steps:  
-1. recommend + user → candidate_movies  
-2. filter + (recommend + user) → filtered_movies  
-3. select + (filter + recommend + user) → final_choice  
-
-Lisp Translation:  
-(let ((x (filter (recommend user))))  
-  (select x))  
-
-Parsing Steps (Symbolic → Lisp):
-
-Each `+` implies function application (right-to-left nesting)  
-Valency rules from /Verbs/ determine how verbs compose  
-Intermediate results may be named (e.g., candidate_movies, filtered_movies)  
-Use let to bind reusable subresults  
-Refer to /Rules/operation_formula.md for chaining logic and semantics  
 ---
+
+## **/Verbs/**
+
+### recommend.md
+
+* **Verb:** recommend
+* **Valency:** 1–2
+* **Purpose:** Retrieve candidate movies for a user.
+* **Examples:**
+
+  * `recommend + user`
+  * `recommend + user + filter`
+
+### select.md
+
+* **Verb:** select
+* **Valency:** 1
+* **Purpose:** Choose final movie from a filtered list.
+* **Examples:**
+
+  * `select from recommendation`
+  * `recommend + user + filter + select`
+
+### filter.md
+
+* **Verb:** filter
+* **Valency:** 1
+* **Purpose:** Narrow movie sets by attributes.
+* **Filterable Attributes:** genre, actor, tone, runtime, platform, award
+* **Examples:**
+
+  * `filter + genre`
+  * `recommend + user + filter + runtime<90`
+  * `filter + tone:dark`
+
+### rate.md
+
+* **Verb:** rate
+* **Valency:** 1
+* **Purpose:** Assign a score or evaluation to a movie.
+* **Examples:**
+
+  * `rate movie`
+  * `rate movie with user`
+
+### merge.md
+
+* **Verb:** merge
+* **Valency:** 2+
+* **Purpose:** Combine results from parallel filter branches.
+* **Example:** `merge(short, dark)`
+
+### compare.md
+
+* **Verb:** compare
+* **Valency:** 2
+* **Purpose:** Compare result sets, movies, or attributes (symmetric).
+* **Example:** `compare(platform("netflix"), platform("apple tv+"))`
+
+---
+
+## **/Nouns/**
+
+| Noun         | Examples                                    |
+| ------------ | ------------------------------------------- |
+| **user**     | `user:John`, `user:anonymous`               |
+| **movie**    | `"Inception"`, `"The Matrix"`               |
+| **genre**    | sci-fi, drama, comedy                       |
+| **actor**    | Leonardo DiCaprio, Emma Stone, Keanu Reeves |
+| **rating**   | 8.5, PG-13, R                               |
+| **platform** | netflix, hulu, apple tv+, prime video       |
+| **tone**     | thought-provoking, dark, uplifting          |
+| **runtime**  | `runtime<90`, `runtime<120`                 |
+| **award**    | oscar, bafta, cannes                        |
+
+---
+
+## **/Rules/operation_formula.md**
+
+### Operation Formulas
+
+* **Sequential Recommendation Chain:**
+
+  * `genre("sci-fi") + platform("netflix") → filtered_movies`
+  * `recommend + user + filter → filtered_movies`
+  * `recommend + user + filter + select → final_choice`
+
+* **Filtering Logic:**
+
+  * `filter + genre` → subset by genre
+  * `filter + tone` → subset by mood
+  * `filter + runtime<90` → short movies
+
+* **Branch + Merge:**
+
+  * `let + A + branch(B, C) + merge → intersected result`
+  * `let + base + compare(other_set)`
+
+* **Symbolic Chain Composition:**
+
+  * `let + A + B + C + branch(...) + merge + compare(...)` → Lisp-equivalent nested evaluation
+
+---
+
+## **/Templates/prompt_templates.md**
+
+### User-Facing Shorthand
+
+```
+Home → Movies → Sci-fi → Thought-provoking → Netflix →
+Branch 1: Runtime: Short (<90m) →
+Branch 2: Tone: Dark →
+Merge →
+Compare with: Apple TV+
+```
+
+### Framework Shorthand
+
+* `let + recommend + user`
+* `recommend + user + filter + select`
+
+### Symbolic Chain Composition
+
+* `genre(...) + platform(...) + tone(...)`
+* `let + moodToGenre("uplifting") + platform(...) + runtime<90`
+* `let + analyze("Palm Springs") + themeMatch + toneShift(...) + platform(...) + compare(...)`
+
+### Branch + Merge Templates
+
+* `let + A + branch(B, C) + merge`
+* `let + A + platform(...) + compare(...)`
+
+---
+
+## **/SemanticParsingLayer/**
+
+### suggestor.md
+
+* **Purpose:** Parse symbolic chain fragments, suggest completions using valency + rules.
+* **Example:**
+  Input: `genre("sci-fi") +`
+  Suggestions: platform(...), tone(...), filter(...), compare(...)
+
+### parser.md
+
+* **Purpose:** Convert symbolic `+` composition into Lisp-style tree; support binding, branching, merging.
+
+**Example:**
+
+```
+Input: recommend + user + filter + select
+Steps:
+1) recommend + user           → candidate_movies
+2) filter(candidate_movies)   → filtered_movies
+3) select(filtered_movies)    → final_choice
+
+Lisp:
+(let ((x (filter (recommend user))))
+  (select x))
+```
+
+**Parsing Steps (Symbolic → Lisp)**
+
+* Each `+` = function application (right-to-left nesting).
+* **Valency** from `/Verbs/` governs argument composition.
+* Intermediate results may be named (e.g., `candidate_movies`, `filtered_movies`).
+* Use `let` for reusable subresults.
+* See `/Rules/operation_formula.md` for full chaining semantics.
+
+---
+
 ````
 
