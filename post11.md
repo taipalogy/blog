@@ -62,114 +62,123 @@ Format Frameworkエ³meta-action是一个高階，有適應性エ³action combo�
 下脚是利用ChatGPT産生エ³prompt:
 
 ````
+
 ---
 
 # **Framework for Date and Disk Formatting**
 
-## **1. Folder Structure**  
-/Prompts/  
-    /Verbs/  
-        format.md  
-    /Arguments/  
-        text.md  
-        disk.md  
-    /Rules/  
-        date_format.md  
-        case_format.md  
-        disk_format.md  
+## **1. Folder Structure**
+
+/PromptFramework/
+　/Verbs/
+　　format.md
+　/Arguments/
+　　text.md
+　　disk.md
+　/Rules/
+　　date_format.md
+　　case_format.md
+　　disk_format.md
 
 ---
 
-## **2. Components**  
+## **1.1 Verbs**
 
-### **1. Verbs Folder**  
-- **File**: format.md  
-  - **Purpose**: Store verb definitions and rules for "format".  
-  - **Contents**:
+### **File**: format.md
 
-    ```markdown
-    # Verb: Format
-    - format (valency: 2)
+* **Purpose**: Store verb definitions and rules for "format".
+* **Contents**:
 
-    ## Error Handling:
-    - If the verb "format" is used without an object, return:
-      - "Please specify what to format (e.g., text or disk)."
-    ```
+```
+Verb: Format
+- format (valency: 2)
 
-  - **Example Templates**:  
-    - **Valency 2**: "Format the dates in {{text}}."
-    - **Valency 2**: "Format the disk {{disk}}."
-    - **Valency 2**: "Format the case in {{text}}."
+Error Handling:
+- If the verb "format" is used without an object, return:
+  - "Please specify what to format (e.g., text or disk)."
+```
 
----
+* **Example Templates**:
 
-### **2. Arguments Folder**  
-
-#### **File**: text.md  
-- **Purpose**: Store references to text containing dates or needing formatting.  
-- **Contents**:
-
-    ```markdown
-    # Text Sources
-    - "Report Document"
-    - "Log File"
-    - "User Input"
-    ```
-
-#### **File**: disk.md  
-- **Purpose**: Store references to virtual disks to be formatted.  
-- **Contents**:  
-
-    ```markdown
-    # Virtual Disks
-    - "Virtual 1"
-    - "The Virtual"
-    ```
+  * "Format the dates in ."
+  * "Format the disk ."
+  * "Format the case in ."
 
 ---
 
-### **3. Rules Folder**  
+## **1.2 Arguments**
 
-#### **File**: date_format.md  
-- **Purpose**: Define how dates should be formatted and checked.  
-- **Contents**:  
+### **File**: text.md
 
-    ```markdown
-    # Date Formatting Rules
-    - **Input Format**: Detects unformatted dates (e.g., YYYY-MM-DD, DD/MM/YYYY).
-    - **Output Format**: Converts detected dates to:
-      - **MM/DD/YYYY** (U.S. format)
-      - **YYYY年MM月DD日** (Taiwanese format)
-    - **Processing Rule**: Apply conversion only if unformatted dates are found.
-    - **Case Consideration**: If the sentence contains both a date and non-date text, only the date should be formatted, and the case should remain unaffected.
-    ```
+* **Purpose**: Store references to text containing dates or needing formatting.
+* **Contents**:
 
-#### **File**: case_format.md  
-- **Purpose**: Define rules for formatting text to sentence case.  
-- **Contents**:
+```
+Text Sources
+- "Report Document"
+- "Log File"
+- "User Input"
+```
 
-    ```markdown
-    # Text Formatting Rules (Case Only)
-    - If the text object is not in sentence case, apply sentence case formatting:
-      - The first letter of the first word should be capitalized, and the rest should be lowercase.
-      - Example: "this is a sentence." → "This is a sentence."
-    - **Important**: If the text contains dates, do not modify the date format. Only the case of the text should be changed.
-    ```
+### **File**: disk.md
 
-#### **File**: disk_format.md  
-- **Purpose**: Define disk formatting rules.  
-- **Contents**:  
+* **Purpose**: Store references to virtual disks to be formatted.
+* **Contents**:
 
-    ```markdown
-    # Disk Formatting Rules
-    - Disk Name Requirement: Formatting applies only if the disk name contains the term 'virtual'.
-    - Available Formats: NTFS, ext4, APFS, FAT32.
-    - Processing Rule: If the disk name lacks 'virtual', return:
-      - "Invalid disk name. Formatting not executed."
-    - Automatic Format Selection: A format will be automatically chosen from the available options (NTFS, ext4, APFS, FAT32) to format the disk.
-    - Output Example: "Formatting {{disk}} to {{selected_format}}."
-    ```
+```
+Virtual Disks
+- "Virtual 1"
+- "The Virtual"
+```
 
 ---
+
+## **1.3 Rules**
+
+### **File**: date_format.md
+
+* **Purpose**: Define how dates should be formatted and checked.
+* **Contents**:
+
+```
+Date Formatting Rules
+- Input Format: Detects unformatted dates (e.g., YYYY-MM-DD, DD/MM/YYYY).
+- Output Format: Converts detected dates to:
+  - MM/DD/YYYY (U.S. format)
+  - YYYY年MM月DD日 (Taiwanese format)
+- Processing Rule: Apply conversion only if unformatted dates are found.
+- Case Consideration: If the sentence contains both a date and non-date text, only the date should be formatted, and the case should remain unaffected.
+```
+
+### **File**: case_format.md
+
+* **Purpose**: Define rules for formatting text to sentence case.
+* **Contents**:
+
+```
+Text Formatting Rules (Case Only)
+- If the text object is not in sentence case, apply sentence case formatting:
+  - The first letter of the first word should be capitalized, and the rest should be lowercase.
+  - Example: "this is a sentence." → "This is a sentence."
+- Important: If the text contains dates, do not modify the date format. Only the case of the text should be changed.
+```
+
+### **File**: disk_format.md
+
+* **Purpose**: Define disk formatting rules.
+* **Contents**:
+
+```
+Disk Formatting Rules
+- Disk Name Requirement: Formatting applies only if the disk name contains the term 'virtual'.
+- Available Formats: NTFS, ext4, APFS, FAT32.
+- Processing Rule: If the disk name lacks 'virtual', return:
+  - "Invalid disk name. Formatting not executed."
+- Automatic Format Selection: A format will be automatically chosen from the available options (NTFS, ext4, APFS, FAT32) to format the disk.
+- Output Example: "Formatting  to ."
+```
+
+---
+
 ````
 
