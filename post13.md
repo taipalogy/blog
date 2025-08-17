@@ -283,45 +283,45 @@ ChatGPT加上Grok産生
 
 # Movie-Selecting Framework
 
-## Folder Structure
+## **1. Folder Structure**
 
-* Framework/
-
-  * Verbs/: recommend.md, select.md, filter.md, rate.md, merge.md, compare.md
-  * Nouns/: user.md, movie.md, genre.md, actor.md, rating.md, platform.md, tone.md, runtime.md, award.md
-  * Rules/: operation_formula.md
-  * Templates/: prompt_templates.md
-  * SemanticParsingLayer/: suggestor.md, parser.md
+```
+/PromptFramework/
+    /Verbs/: recommend.md, select.md, filter.md, rate.md, merge.md, compare.md
+    /Nouns/: user.md, movie.md, genre.md, actor.md, rating.md, platform.md, tone.md, runtime.md, award.md
+    /Rules/: operation_formula.md
+    /Templates/: prompt_templates.md
+    /SemanticParsingLayer/: suggestor.md, parser.md
+```
 
 ---
 
-## **/Verbs/**
+## **2. Components Breakdown**
 
-### recommend.md
+### A. Verbs Folder
 
-* **Verb:** recommend
-* **Valency:** 1–2
+#### File: recommend.md
+
 * **Purpose:** Retrieve candidate movies for a user.
+* **Valency:** 1–2
 * **Examples:**
 
   * `recommend + user`
   * `recommend + user + filter`
 
-### select.md
+#### File: select.md
 
-* **Verb:** select
-* **Valency:** 1
 * **Purpose:** Choose final movie from a filtered list.
+* **Valency:** 1
 * **Examples:**
 
   * `select from recommendation`
   * `recommend + user + filter + select`
 
-### filter.md
+#### File: filter.md
 
-* **Verb:** filter
-* **Valency:** 1
 * **Purpose:** Narrow movie sets by attributes.
+* **Valency:** 1
 * **Filterable Attributes:** genre, actor, tone, runtime, platform, award
 * **Examples:**
 
@@ -329,33 +329,30 @@ ChatGPT加上Grok産生
   * `recommend + user + filter + runtime<90`
   * `filter + tone:dark`
 
-### rate.md
+#### File: rate.md
 
-* **Verb:** rate
-* **Valency:** 1
 * **Purpose:** Assign a score or evaluation to a movie.
+* **Valency:** 1
 * **Examples:**
 
   * `rate movie`
   * `rate movie with user`
 
-### merge.md
+#### File: merge.md
 
-* **Verb:** merge
-* **Valency:** 2+
 * **Purpose:** Combine results from parallel filter branches.
+* **Valency:** 2+
 * **Example:** `merge(short, dark)`
 
-### compare.md
+#### File: compare.md
 
-* **Verb:** compare
-* **Valency:** 2
 * **Purpose:** Compare result sets, movies, or attributes (symmetric).
+* **Valency:** 2
 * **Example:** `compare(platform("netflix"), platform("apple tv+"))`
 
 ---
 
-## **/Nouns/**
+### B. Nouns Folder
 
 | Noun         | Examples                                    |
 | ------------ | ------------------------------------------- |
@@ -371,97 +368,100 @@ ChatGPT加上Grok産生
 
 ---
 
-## **/Rules/operation_formula.md**
+### C. Rules Folder
 
-### Operation Formulas
+#### File: operation_formula.md
 
-* **Sequential Recommendation Chain:**
+* **Purpose:** Store symbolic operation formulas for movie selection.
+* **Contents:**
 
-  * `genre("sci-fi") + platform("netflix") → filtered_movies`
-  * `recommend + user + filter → filtered_movies`
-  * `recommend + user + filter + select → final_choice`
-
-* **Filtering Logic:**
-
-  * `filter + genre` → subset by genre
-  * `filter + tone` → subset by mood
-  * `filter + runtime<90` → short movies
-
-* **Branch + Merge:**
-
-  * `let + A + branch(B, C) + merge → intersected result`
-  * `let + base + compare(other_set)`
-
-* **Symbolic Chain Composition:**
-
-  * `let + A + B + C + branch(...) + merge + compare(...)` → Lisp-equivalent nested evaluation
+  * **Sequential Recommendation Chain:**
+    `genre("sci-fi") + platform("netflix") → filtered_movies`
+    `recommend + user + filter → filtered_movies`
+    `recommend + user + filter + select → final_choice`
+  * **Filtering Logic:**
+    `filter + genre` → subset by genre
+    `filter + tone` → subset by mood
+    `filter + runtime<90` → short movies
+  * **Branch + Merge:**
+    `let + A + branch(B, C) + merge → intersected result`
+    `let + base + compare(other_set)`
+  * **Symbolic Chain Composition:**
+    `let + A + B + C + branch(...) + merge + compare(...)` → Lisp-style nested evaluation
 
 ---
 
-## **/Templates/prompt_templates.md**
+### D. Templates Folder
 
-### User-Facing Shorthand
+#### File: prompt_templates.md
 
-```
-Home → Movies → Sci-fi → Thought-provoking → Netflix →
-Branch 1: Runtime: Short (<90m) →
-Branch 2: Tone: Dark →
-Merge →
-Compare with: Apple TV+
-```
+* **Purpose:** Provide user-facing and symbolic shorthand templates.
+* **Contents:**
 
-### Framework Shorthand
+  * **User-Facing Shorthand:**
 
-* `let + recommend + user`
-* `recommend + user + filter + select`
+    ```
+    Home → Movies → Sci-fi → Thought-provoking → Netflix →
+    Branch 1: Runtime: Short (<90m) →
+    Branch 2: Tone: Dark →
+    Merge →
+    Compare with: Apple TV+
+    ```
 
-### Symbolic Chain Composition
+  * **Framework Shorthand:**
 
-* `genre(...) + platform(...) + tone(...)`
-* `let + moodToGenre("uplifting") + platform(...) + runtime<90`
-* `let + analyze("Palm Springs") + themeMatch + toneShift(...) + platform(...) + compare(...)`
+    * `let + recommend + user`
+    * `recommend + user + filter + select`
 
-### Branch + Merge Templates
+  * **Symbolic Chain Composition:**
 
-* `let + A + branch(B, C) + merge`
-* `let + A + platform(...) + compare(...)`
+    * `genre(...) + platform(...) + tone(...)`
+    * `let + moodToGenre("uplifting") + platform(...) + runtime<90`
+    * `let + analyze("Palm Springs") + themeMatch + toneShift(...) + platform(...) + compare(...)`
+
+  * **Branch + Merge Templates:**
+
+    * `let + A + branch(B, C) + merge`
+    * `let + A + platform(...) + compare(...)`
 
 ---
 
-## **/SemanticParsingLayer/**
+### E. SemanticParsingLayer Folder
 
-### suggestor.md
+#### File: suggestor.md
 
 * **Purpose:** Parse symbolic chain fragments, suggest completions using valency + rules.
 * **Example:**
   Input: `genre("sci-fi") +`
   Suggestions: platform(...), tone(...), filter(...), compare(...)
 
-### parser.md
+#### File: parser.md
 
 * **Purpose:** Convert symbolic `+` composition into Lisp-style tree; support binding, branching, merging.
+* **Contents:**
 
-**Example:**
+  **Parsing Steps (Symbolic → Lisp):**
 
-```
-Input: recommend + user + filter + select
-Steps:
-1) recommend + user           → candidate_movies
-2) filter(candidate_movies)   → filtered_movies
-3) select(filtered_movies)    → final_choice
+  1. **Tokenize** the input expression by `+` symbols.
+  2. **Determine valency** of each verb from `/Verbs/`.
+  3. **Apply functions right-to-left**: each verb consumes arguments according to valency.
+  4. **Name intermediate results** using `let` for reusable subresults.
+  5. **Handle branching and merging** using `branch(...)` and `merge(...)`.
+  6. **Compose final Lisp tree** reflecting sequential and nested operations.
 
-Lisp:
-(let ((x (filter (recommend user))))
-  (select x))
-```
+  **Example:**
 
-**Parsing Steps (Symbolic → Lisp)**
+  ```
+  Input: recommend + user + filter + select
 
-* Each `+` = function application (right-to-left nesting).
-* **Valency** from `/Verbs/` governs argument composition.
-* Intermediate results may be named (e.g., `candidate_movies`, `filtered_movies`).
-* Use `let` for reusable subresults.
-* See `/Rules/operation_formula.md` for full chaining semantics.
+  Step 1: recommend + user           → candidate_movies
+  Step 2: filter(candidate_movies)   → filtered_movies
+  Step 3: select(filtered_movies)    → final_choice
+
+  Lisp:
+  (let ((x (filter (recommend user))))
+    (select x))
+  ```
 
 ---
 
