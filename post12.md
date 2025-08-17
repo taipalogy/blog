@@ -105,13 +105,15 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 利用ChatGPTカㇷ¹Copilot製作prompt，利用Grok産生會話(conversation)。
 
 ````
+
 ---
 
 # Coffee-Making Framework
 
 ## **1. Folder Structure**
+
 ```
-/Framework/
+/PromptFramework/
     /Verbs/
         make.md
     /Nouns/
@@ -120,6 +122,7 @@ Made是過去分詞，利用語尾-ed表示動作完成。
     /Rules/
         operation_formula.md
     /SemanticParsingLayer/
+    /CoffeeHelp/
 ```
 
 ---
@@ -127,27 +130,34 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 ## **2. Components Breakdown**
 
 ### A. Verbs Folder
-- **File:** `make.md`  
-  - **Purpose:** Centralized file for the action verb **make** and its inflected forms.  
-  - **Contents:**  
+
+* **File:** `make.md`
+
+  * **Purpose:** Centralized file for the action verb **make** and its inflected forms.
+  * **Contents:**
+
     ```markdown
     # Verb: Make
     - make (valency: 1 or 2)
     - making (gerund)
     - made (past participle)
     ```
-  - **Example Templates:**  
-    - *make coffee*  
-    - *make coffee with steamed milk*  
-    - *making coffee artistically*  
-    - *made coffee quickly*
+  * **Example Templates:**
+
+    * *make coffee*
+    * *make coffee with steamed milk*
+    * *making coffee artistically*
+    * *made coffee quickly*
 
 ---
 
 ### B. Nouns Folder
-- **File:** `coffee.md`  
-  - **Purpose:** Types of coffee for combinations.  
-  - **Contents:**  
+
+* **File:** `coffee.md`
+
+  * **Purpose:** Types of coffee for combinations.
+  * **Contents:**
+
     ```markdown
     # Coffee Types
     - espresso
@@ -156,9 +166,11 @@ Made是過去分詞，利用語尾-ed表示動作完成。
     - cappuccino
     ```
 
-- **File:** `milk.md`  
-  - **Purpose:** Forms and types of milk for combinations.  
-  - **Contents:**  
+* **File:** `milk.md`
+
+  * **Purpose:** Forms and types of milk for combinations.
+  * **Contents:**
+
     ```markdown
     # Milk Types and Forms
     - whole milk
@@ -171,9 +183,12 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 ---
 
 ### C. Rules Folder
-- **File:** `operation_formula.md`  
-  - **Purpose:** Valid operation formulas and their interpretations.  
-  - **Contents:**  
+
+* **File:** `operation_formula.md`
+
+  * **Purpose:** Valid operation formulas and their interpretations.
+  * **Contents:**
+
     ```markdown
     # Operation Formulas
     - coffee + milk → Combined beverage
@@ -190,26 +205,37 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 ---
 
 ### D. Semantic Parsing Layer
-- **Purpose:** A flexible module designed to interpret dynamic inputs beyond predefined rules.  
-- **Capabilities:**  
-  - Analyzing open-ended descriptors, such as "elegantly," "efficiently," "strong," or "iced."  
-  - Mapping parsed intent to relevant processes and outputs.  
-  - Learning and adapting based on user feedback for new terms and contexts.  
 
-#### **Enabling and Disabling Semantic Parsing**
-- The Semantic Parsing Layer can be toggled on and off directly within the system:
-  - **Enable:** *The layer interprets descriptive and dynamic inputs.*
-  - **Disable:** *Inputs are processed strictly based on core rules defined in `operation_formula.md`.*  
+* **Purpose:** A flexible module designed to interpret dynamic inputs beyond predefined rules.
+* **Capabilities:**
 
-- **One-Liner Commands to Toggle:**
-  - To enable: *"Enable Semantic Parsing"*  
-  - To disable: *"Disable Semantic Parsing"*  
-  - The toggle updates a system-wide flag that controls the inclusion of semantic parsing in the workflow.
+  * Analyzing open-ended descriptors, such as "elegantly," "efficiently," "strong," or "iced."
+  * Mapping parsed intent to relevant processes and outputs.
+  * Learning and adapting based on user feedback for new terms and contexts.
+
+**D.1 Enabling and Disabling Semantic Parsing**
+
+* The Semantic Parsing Layer can be toggled on and off directly within the system:
+
+  * **Enable:** *The layer interprets descriptive and dynamic inputs.*
+  * **Disable:** *Inputs are processed strictly based on core rules defined in `operation_formula.md`.*
+
+* **One-Liner Commands to Toggle:**
+
+  * To enable: *"Enable Semantic Parsing"*
+  * To disable: *"Disable Semantic Parsing"*
+  * The toggle updates a system-wide flag that controls the inclusion of semantic parsing in the workflow.
 
 ---
 
-### **Coffee Help**
-- For input *"help"* or *"help [operation formula]"* (e.g., "help make coffee"), the system uses semantic parsing to display contextual guidance.
+### E. Coffee Help
+
+* **Purpose:** Provides contextual guidance for users.
+* **Functionality:**
+
+  * For input *"help"* or *"help \[operation formula]"* (e.g., *"help make coffee"*), the system uses semantic parsing to display contextual guidance.
+
 ---
+
 ````
 
