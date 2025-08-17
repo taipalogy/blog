@@ -152,7 +152,7 @@ Final Lisp-Style Composition
 
 ### 逐カィ²エ³條件追加(Sequential Filter Refinement)
 
-序列式過濾是一種逐カィ²追加條件エ⁷過濾。逐カィ²エ³使用者提示ロㆁ以漸進方式カ³結果集窄化。譬喻広:
+序列式過濾是一種逐カィ²追加條件エ⁷過濾。逐カィ²エ³使用者提示ロㆁ以漸進方式カ³結果集阨化(ウェㇷ³ファ³)。譬喻広:
 
 * “List sci-fi movies on Netflix.” → 基本結果集
 * “Filter by tone: thought-provoking.” → カ⁷窄化
