@@ -283,7 +283,7 @@ ChatGPT加上Grok産生
 
 # Movie-Selecting Framework
 
-## **1. Folder Structure**
+## **Folder Structure**
 
 ```
 /PromptFramework/
@@ -296,11 +296,9 @@ ChatGPT加上Grok産生
 
 ---
 
-## **2. Components Breakdown**
+## A. Verbs Folder
 
-### A. Verbs Folder
-
-#### File: recommend.md
+### File: recommend.md
 
 * **Purpose:** Retrieve candidate movies for a user.
 * **Valency:** 1–2
@@ -309,7 +307,7 @@ ChatGPT加上Grok産生
   * `recommend + user`
   * `recommend + user + filter`
 
-#### File: select.md
+### File: select.md
 
 * **Purpose:** Choose final movie from a filtered list.
 * **Valency:** 1
@@ -318,7 +316,7 @@ ChatGPT加上Grok産生
   * `select from recommendation`
   * `recommend + user + filter + select`
 
-#### File: filter.md
+### File: filter.md
 
 * **Purpose:** Narrow movie sets by attributes.
 * **Valency:** 1
@@ -329,7 +327,7 @@ ChatGPT加上Grok産生
   * `recommend + user + filter + runtime<90`
   * `filter + tone:dark`
 
-#### File: rate.md
+### File: rate.md
 
 * **Purpose:** Assign a score or evaluation to a movie.
 * **Valency:** 1
@@ -338,13 +336,13 @@ ChatGPT加上Grok産生
   * `rate movie`
   * `rate movie with user`
 
-#### File: merge.md
+### File: merge.md
 
 * **Purpose:** Combine results from parallel filter branches.
 * **Valency:** 2+
 * **Example:** `merge(short, dark)`
 
-#### File: compare.md
+### File: compare.md
 
 * **Purpose:** Compare result sets, movies, or attributes (symmetric).
 * **Valency:** 2
@@ -352,7 +350,7 @@ ChatGPT加上Grok産生
 
 ---
 
-### B. Nouns Folder
+## B. Nouns Folder
 
 | Noun         | Examples                                    |
 | ------------ | ------------------------------------------- |
@@ -368,9 +366,9 @@ ChatGPT加上Grok産生
 
 ---
 
-### C. Rules Folder
+## C. Rules Folder
 
-#### File: operation_formula.md
+### File: operation_formula.md
 
 * **Purpose:** Store symbolic operation formulas for movie selection.
 * **Contents:**
@@ -391,9 +389,9 @@ ChatGPT加上Grok産生
 
 ---
 
-### D. Templates Folder
+## D. Templates Folder
 
-#### File: prompt_templates.md
+### File: prompt_templates.md
 
 * **Purpose:** Provide user-facing and symbolic shorthand templates.
 * **Contents:**
@@ -426,16 +424,16 @@ ChatGPT加上Grok産生
 
 ---
 
-### E. SemanticParsingLayer Folder
+## E. SemanticParsingLayer Folder
 
-#### File: suggestor.md
+### File: suggestor.md
 
 * **Purpose:** Parse symbolic chain fragments, suggest completions using valency + rules.
 * **Example:**
   Input: `genre("sci-fi") +`
   Suggestions: platform(...), tone(...), filter(...), compare(...)
 
-#### File: parser.md
+### File: parser.md
 
 * **Purpose:** Convert symbolic `+` composition into Lisp-style tree; support binding, branching, merging.
 * **Contents:**

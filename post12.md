@@ -110,7 +110,7 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 
 # Coffee-Making Framework
 
-## **1. Folder Structure**
+## **Folder Structure**
 
 ```
 /PromptFramework/
@@ -127,9 +127,7 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 
 ---
 
-## **2. Components Breakdown**
-
-### A. Verbs Folder
+## A. Verbs Folder
 
 * **File:** `make.md`
 
@@ -151,7 +149,7 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 
 ---
 
-### B. Nouns Folder
+## B. Nouns Folder
 
 * **File:** `coffee.md`
 
@@ -182,7 +180,7 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 
 ---
 
-### C. Rules Folder
+## C. Rules Folder
 
 * **File:** `operation_formula.md`
 
@@ -204,7 +202,7 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 
 ---
 
-### D. Semantic Parsing Layer
+## D. Semantic Parsing Layer
 
 * **Purpose:** A flexible module designed to interpret dynamic inputs beyond predefined rules.
 * **Capabilities:**
@@ -228,7 +226,7 @@ Made是過去分詞，利用語尾-ed表示動作完成。
 
 ---
 
-### E. Coffee Help
+## E. Coffee Help
 
 * **Purpose:** Provides contextual guidance for users.
 * **Functionality:**
