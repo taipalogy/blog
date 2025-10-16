@@ -229,6 +229,7 @@ Attribute是ホㆁ⁵當做名詞屬性對待，顛倒不是一个獨自存在�
 
 規格驅動功能項管理Framework，カㇷ²語義資訊圖表
 
+以下prompt利用ChatGTP，Grok産生：
 ````
 
 ---
