@@ -238,16 +238,16 @@ Output: `22:00`
   - suggestor.md
   - parser.md
 
-## /Verbs/display.md
-**Verb**: display
+### /Verbs/display.md
+
 - **Valency**: 1 or 2
 - **Description**: Shows the current time snapshot.
 - **Examples**:
   - `display + time`: Displays current time (e.g., 17:50).
   - `display + time + format(hour+minute)`: Displays time with specified format (e.g., 17:50).
 
-## /Verbs/format.md
-**Verb**: format
+### /Verbs/format.md
+
 - **Valency**: 1
 - **Description**: Determines the arrangement and components of the time display.
 - **Format Options**:
@@ -260,8 +260,8 @@ Output: `22:00`
   - `format + hour + minute`: Shows hours and minutes (e.g., 17:50).
   - `display + time + format(hour+minute)`: Displays time as hours and minutes (e.g., 17:50).
 
-## /Verbs/set.md
-**Verb**: set
+### /Verbs/set.md
+
 - **Valency**: 1
 - **Description**: Specifies visual attributes for the time display. Defaults to plain text if not included.
 - **Settable Attributes**:
@@ -273,43 +273,43 @@ Output: `22:00`
   - `display + time + set(color:blue, size:48px)`: Displays time in blue, 48px font.
   - `display + time + format(hour+minute)`: Displays time as plain text (e.g., 17:50).
 
-## /Verbs/merge.md
-**Verb**: merge
+### /Verbs/merge.md
+
 - **Valency**: 2 or more
 - **Description**: Combines multiple time display formats or styles into a single output.
 - **Examples**:
   - `merge(format(hour), set(size:32px))`: Combines hour format with 32px font size.
 
-## /Nouns/time.md
-**Noun**: time
+### /Nouns/time.md
+
 - **Description**: Represents the current system time snapshot.
 - **Examples**:
   - `time:now`: Current local time (e.g., 17:50 CST).
   - `time:UTC`: Current UTC time (e.g., 23:50 UTC).
 
-## /Nouns/hour.md
-**Noun**: hour
+### /Nouns/hour.md
+
 - **Description**: Represents the hour component of time.
 - **Examples**:
   - `hour:17`
   - `hour:23`
 
-## /Nouns/minute.md
-**Noun**: minute
+### /Nouns/minute.md
+
 - **Description**: Represents the minute component of time.
 - **Examples**:
   - `minute:50`
   - `minute:30`
 
-## /Nouns/second.md
-**Noun**: second
+### /Nouns/second.md
+
 - **Description**: Represents the second component of time.
 - **Examples**:
   - `second:23`
   - `second:58`
 
-## /Nouns/color.md
-**Noun**: color
+### /Nouns/color.md
+
 - **Description**: Represents text color for display.
 - **Examples**:
   - `red`
@@ -317,16 +317,15 @@ Output: `22:00`
   - `black`
   - `white`
 
-## /Nouns/size.md
-**Noun**: size
+### /Nouns/size.md
+
 - **Description**: Represents text/font size for display.
 - **Examples**:
   - `12px`
   - `24px`
   - `48px`
 
-## /Rules/operation_formula.md
-**Operation Formulas**
+### /Rules/operation_formula.md
 
 **Basic Time Display Chain**
 - `display + time`: Displays current time (e.g., 17:50).
@@ -350,8 +349,7 @@ Output: `22:00`
 **Symbolic Chain Composition**
 - `let + A + B + branch(...) + merge`: Nested Lisp-like evaluation.
 
-## /Templates/prompt_templates.md
-**Prompt Templates**
+### /Templates/prompt_templates.md
 
 **User-Facing Shorthand**
 Uses → for intuitive flow with terms like Clock, Hour, Minute, Color, Size, Merge, Branch.
@@ -369,8 +367,7 @@ Uses → for intuitive flow with terms like Clock, Hour, Minute, Color, Size, Me
 - `let + display(time:now) + format(hour+minute) + set(color:blue, size:24px)`
 - `let + display(time:UTC) + branch(format(hour+minute+second), set(color:red, size:32px)) + merge`
 
-## /SemanticParsingLayer/suggestor.md
-**Suggestor Logic**
+### /SemanticParsingLayer/suggestor.md
 
 **Overview**
 Parses partial chains and suggests completions based on valency and rules (`/Rules/operation_formula.md`), covering User-Facing Shorthand, Framework Shorthand, and Symbolic Chain Composition.
@@ -395,8 +392,7 @@ Parses partial chains and suggests completions based on valency and rules (`/Rul
 - **Input**: `let + display(time) + branch +`
   - **Suggestions**: `format(hour+minute)`, `set(color:blue, size:24px)`, `merge`
 
-## /SemanticParsingLayer/parser.md
-**Semantic Parser**
+### /SemanticParsingLayer/parser.md
 
 **Overview**
 Converts chains into Lisp-style trees, generating human-readable parsing steps.
