@@ -198,7 +198,7 @@ attr::highlight(coverage_gap)
 
 7. Composition Cluster
 ```
-spec::bundle(module="指揮中心 Web Dashboard") + rule::composition(nested="subspecs")
+spec::bundle(module="Command Center") + rule::composition(nested="subspecs")
 ```
 
 若準一改着ベㇷ¹띠³所有エ⁷overlay，一个multi-panel HUD：
