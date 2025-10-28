@@ -122,10 +122,10 @@ Folder構造是你アㇴ¹ツァ˜カ³你エ³codeカㇷ¹資源띠ァㇺ²disk
 
 下腳是一个エ³印出"Hello, world."エ³提示驅動framework。伊타ㆁ⁷ツㇴ做一个起點，只要カ⁷copy過你エ³AI模型ヒァ，着エ³タㆁ²開始用ア⁷。
 
-````markdown
-# **Prompt-Driven Framework for Hello-World Outputs**
+````
 
 ---
+# **Prompt-Driven Framework for Hello-World Outputs**
 
 ## **Framework Structure**
 
@@ -145,7 +145,7 @@ The **Rules file** describes how to combine these prompts based on the grammatic
 ## **Framework Implementation**
 
 ### **Folder and File Structure**
-```plaintext
+```text
 /Framework/
     /Prompts/
         verb.md
@@ -290,6 +290,8 @@ Generate outputs in programming or markup formats:
 - Python: `print("Hello World!")`
 - C: `printf("Hello World!");`
 - HTML: `<h1>Hello World!</h1>`
+---
+
 ````
 
 ### 實腹版
