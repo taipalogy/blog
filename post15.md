@@ -353,7 +353,9 @@ Rules for cycles, coverage, consistency checks.
 ### /Rules/sequence_rules.md
 
 **Workflows**: specify → prioritize → bundle → validate → simulate.  
+
 **HUD-Integrated Sequences**: After any spec::update or spec::remove: Suggest/Run hud_queries.md HUD Automation Chain (templates) for on-demand HUD expansion.  
+
 **Example**: spec::update(priority) → Run HUD Automation Chain with filter("priority_update") → Expand to chain with Kanban highlight.
 
 ## /Templates/
@@ -361,11 +363,12 @@ Rules for cycles, coverage, consistency checks.
 ### /Templates/spec_templates.md
 
 Templates for features like login, search, checkout.  
+
 **Example Queries**:  
 1. Define & prioritize features:  
-`specify(feature("Login"), attrs{priority:"high"}) + specify(feature("Search"), attrs{priority:"medium"}) + attr::surface(attribute("title,priority,status"))`  
+`specify(feature("Login"), attrs{priority:"high"}) + specify(feature("Search"), attrs{priority:"medium"}) + attr::surface(attribute("title,priority,status"))` 
 2. Sort backlog by priority:  
-`attr::surface(attribute("id,title,priority,status")) + attr::sort(attribute("priority"), attrs{order:"desc"}) + layout(view("kanban"))`  
+`attr::surface(attribute("id,title,priority,status")) + attr::sort(attribute("priority"), attrs{order:"desc"}) + layout(view("kanban"))` 
 3. Trace dependencies:  
 `spec::trace(attribute("dependencies"), attrs{feature_id:"F001"}) + attr::cluster(attribute("dependencies")) + layout(view("dependency_graph"))`  
 4. Validate coverage:  
@@ -385,11 +388,13 @@ Workflow templates.
 
 ### /Templates/hud_queries.md
 
-**Purpose**: Compact queries to surface and expand HUD Automation Templates (Shorthand Chains) on-demand, reducing static framework space.  
+**Purpose**: Compact queries to surface and expand HUD Automation Templates (Shorthand Chains) on-demand, reducing static framework space.
+
 **HUD Automation Chain**:  
 `attr::surface(attribute("hud_chains")) + attr::filter(attribute("change_type"), attrs{value:"{optional_change_type}"}) + attr::sort(attribute("change_type")) + layout(view("kanban"))`  
 - Usage: Replace `{optional_change_type}` with e.g., "priority_update" to filter; omit for all chains. Expands to full shorthand chains (e.g., spec::update + highlights + layouts).  
 - Data Source: Pulls from Database hud_configs dataset.  
+
 **Notes**:  
 - Expansion: Run via semantic parser (e.g., "show HUD templates" → HUD Automation Chain). For full view, chain with `attr::highlight` or other verbs.  
 - Extensibility: Update hud_configs dataset to add new chains.  
@@ -404,6 +409,7 @@ Hints for related features/attributes.
 ### /SemanticParsingLayer/parser.md
 
 **Parsing Logic**: Natural language → framework ops.  
+
 **HUD Extensions**: Parse/Expand from hud_queries.md (e.g., "show HUD for update" → Run HUD Automation Chain with filter; "view templates" → Run HUD Automation Chain). Suggest based on change detection (e.g., post-update, prompt chain expansion).
 
 ## /Database/
@@ -412,8 +418,9 @@ Hints for related features/attributes.
 
 **Feature Dataset**:  
 Fields: `id, title, description, priority, status, effort, risk_level, dependencies, test_coverage, validation_status`.  
+
 **HUD Configs Dataset**:  
-Fields: `id, change_type, chain_script, triggers`.  
+Fields: `id, change_type, chain_script, triggers`.
 - Example Entry: `{id:1, change_type:"feature_addition", chain_script:"specify(feature("{feature_name}"), attrs{priority:"{priority}"}) + attr::surface(...) + ...", triggers:{"kanban":true, "timeline":true, ...}}`  
 - Stores compact JSON-like data for queries to expand (e.g., HUD Automation Chain surfaces/formats chain_script).
 ---
