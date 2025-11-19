@@ -300,7 +300,7 @@ Generate outputs in programming or markup formats:
 
 "Generate a compact, fully functional version of the Hello-World framework without tutorials or guidelines—just the core folder structure, prompts, and rules for quick implementation."
 
-### frameworkエ³執行
+### Frameworkエ³執行
 
 カ³Hello-World framework貼クェㇷ了後，用下腳エ³提示ホ³伊執行：
 
