@@ -235,7 +235,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 ````
 
 ---
-# Software Composition Framework v5.9.4 for Gijinka
+# Software Composition Framework for Gijinka
 > Taiwan, November 19, 2025 23:58
 
 ---
@@ -346,7 +346,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 ### **9. /Components/metadata.md**
 ```md
 # metadata.md
-- Origin: input hash, timestamp, SCF v5.9.4
+- Origin: input hash, timestamp, SCF
 - auto_embed!exif_json
 ```
 
@@ -509,14 +509,14 @@ Show another feature mapping which has a totally different arrangement for PaizK
 18. skin!organic_micro → no scales, micro-pores only
 19. myth!born_not_built → Gijinka must feel alive, not constructed
 
-## **v5.9.4 — BIOLOGICAL CORE RULES**
+## **BIOLOGICAL CORE RULES**
 20. **@map!structure_biology** → Source anatomy → human body
 21. **skin!biological_merge** → No fabric. Skin *is* the input.
 22. **@variant!refine** → Same biology → different soul expression
 23. **negative!prop_lock** → No external objects of the source
 24. **myth!biological_origin** → "I was never built. I grew."
 
-## **v5.9.4 — FINAL REFINEMENTS**
+## **FINAL REFINEMENTS**
 25. **chain!atomic_only** → 
    - `!` = **3-place verb ("lock")**
    - Key = **patient / subject**
