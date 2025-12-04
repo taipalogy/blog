@@ -235,7 +235,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 ````
 
 ---
-# Software Composition Framework for Gijinka
+# Software Composition Framework v1.0.0 for Gijinka
 > Taiwan, November 19, 2025 23:58
 
 ---
@@ -346,7 +346,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 ### **9. /Components/metadata.md**
 ```md
 # metadata.md
-- Origin: input hash, timestamp, SCF
+- Origin: input hash, timestamp, SCF v1.0.0
 - auto_embed!exif_json
 ```
 
@@ -614,7 +614,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 | `generate prompt` | Append | Expands **selected variant** to render-ready prompt |
 | `preview grid` | `preview grid 3x1` | Triggers **nx1 variant comparison** |
 | `select variant` | `select variant v3_rose_elegance` | **Locks variant** |
-| `add watermark` | `add watermark "© Name"` | Adds watermark |
+| `add watermark` | `add watermark "Software Composition Framework for Gijinka"` | Adds watermark |
 | `export chain` | `export chain` | Saves chain + variants |
 | `set mode` | `set mode acg|real` | Switches mode |
 | `set style` | `set style [name]` | Replaces current style in the chain |
