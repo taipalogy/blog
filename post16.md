@@ -79,12 +79,12 @@ Operator`!`エ³意思是`Set this key to this value`。伊嘛是設定コㅗㇷ
 
 各種operator比較：
 ---
-| Operator | Valency | Roles (in order) | Syntax | Example | Meaning | 
+| Operator | Valency | Roles (in order) | Syntax | Example | Meaning |
 | ---  | --- | --- | --- | --- | --- |
-| ! | 3-place | "1. Patient (Key)   <br> 2. Verb (!)  <br> 3. Goal(s) (Value)" | `key!value1, value2` | `skin!organic_micro, glossy` | "skin is locked to organic_micro and glossy" |  
-| ~ | 2-place | "1. Patient (Key)  <br> 2. Verb (~) + Modifier (Type)" | `key~type` | `expression~harmonic` | "expression varies harmonically" | 
-| - | 1-place | 1. Verb (-) | `key-` | `backdrop-` | "backdrop is omitted" | 
-| @ | Variable | "1. Command (@)  <br> 2. Action  <br> 3. Arguments" | `@action!arg` | `@preview!grid_3x1` | "execute preview with grid 3x1" |
+| `!` | 3-place | "1. Patient (Key)  2. Verb (!)  3. Goal(s) (Value)" | `key!value1, value2` | `skin!organic_micro, glossy` | "skin is locked to organic_micro and glossy" |  
+| `~` | 2-place | "1. Patient (Key)   2. Verb (~) + Modifier (Type)" | `key~type` | `expression~harmonic` | "expression varies harmonically" | 
+| `-` | 1-place | 1. Verb (-) | `key-` | `backdrop-` | "backdrop is omitted" | 
+| `@` | Variable | "1. Command (@)  2. Action  3. Arguments" | `@action!arg` | `@preview!grid_3x1` | "execute preview with grid 3x1" |
 
 ## 部件
 
