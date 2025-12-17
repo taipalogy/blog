@@ -111,7 +111,7 @@ Operandエ³號名會對`+`operator産生影響。`forground + background`，望
 
 ## Meta-Template
 
-我用Nano Banana 2.5カㇷ¹Copilot生圖ロㆁ無問題。金蕉エ³生圖速度是有卡緊。
+我用Nano Bananaカㇷ¹Copilot生圖ロㆁ無問題。金蕉エ³生圖速度是有卡緊。
 
 等式是チッ¹个meta templateエ³核心。Screen內容カㇷ¹互動畫面エ³替換ロㆁ是愛去對等式做操作。物件エ³替換着是愛靠meta template提供エ⁷物件取向機制來實現。
 
