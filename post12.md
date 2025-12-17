@@ -2,7 +2,7 @@
 title: '操作式咖啡製作Framework'
 description: 'coffee making framework with operation formula'
 date: 2025-03-28
-tags: ['prompt', 'framework', 'ai']
+tags: ['prompt', 'framework', 'ai', 'formula']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
