@@ -52,7 +52,7 @@ Operand1 + Operand2 = Result
 
 第二例是分散式解密。科學家カ³伊エ³双腳踏띠³Iguana Iguana icon頂高。一个電紫色、node-basedエ³解密網路，像水波㒰款對伊エ³双腳向外傳播추ッ키ㇷ。`科學家 + Iguana Iguana Icon = 解密網路傳播`。
 
-Iguana Iguana是青色エ³大隻杜定，美洲イグアナ，中國話コㆁ綠鬛蜥。イグアナ瀏覽器是虛設軟体應用。
+Iguana Iguana是青色エ³大隻杜定，美洲イグアナ，中國話コㆁ綠鬛蜥。イグアナ瀏覽器是一个虛擬瀏覽器。
 
 | Concept | Core Action/Description (Slot I) | [OBJECT] (Slot III) | [RESULT] (Slot IV) | Equation (Slot V) |
 |---|---|---|---|---|
