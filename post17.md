@@ -70,6 +70,12 @@ Iguana Iguana是青色エ³大隻杜定，美洲イグアナ，中國話コㆁ�
 | 1. Dynamic Propulsion | The figure firmly grasps a sleek **Smartphone** in both hands. A **holographic visualization of a powerful, charging rhinoceros** erupts from the base of the phone, propelling the figure rapidly forward from the contact point. | Smartphone | A forceful, dynamic holographic rhinoceros visualization projecting outward and dragging the figure forward. | Scientist + Smartphone = Holographic Rhino Propulsion |
 | 2. Gravimetric Lift | The figure clutches the **Smartphone** overhead with one hand. A powerful, focused **holographic visualization of a soaring eagle** emerges from the phone's camera array, initiating a controlled ascent of the figure into the air from the contact point. | Smartphone | A focused holographic eagle visualization projecting upward from the phone, pulling the figure skyward. | Scientist + Smartphone = Holographic Eagle Lift |
 
+### 換新例
+
+```
+Replace the table rows with 2 new equations.
+```
+
 ## Formula運作原理
 
 ### 轉換
@@ -118,9 +124,11 @@ Operandエ³號名會對`+`operator産生影響。`forground + background`，望
 チッ¹个創意互動meta template主要是用Geminiカㇷ¹ChatGPT做추ッラィㇷエ³。
 
 ````
-# Scientst's Creative Interaction Meta-Template
+> @taipalogy
+> 2025-12-17
+---
 
-> Timestamp: 2025-12-17 18:02
+# Scientst's Creative Interaction Meta-Template
 
 ## I. Core Action Slot (Main Portrait)
 
