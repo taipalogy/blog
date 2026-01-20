@@ -24,7 +24,7 @@ draft: false
 
 ## **1. Folder Structure**  
 ```
-/Framework/  
+/PromptFramework/  
   ├── /Verbs/  
   │     ├── compose.md  
   ├── /Arguments/  
@@ -35,9 +35,9 @@ draft: false
 
 ---
 
-## **2. Action Verbs**  
+## **2. Action Verbs**
+**File:** `/Verbs/compose.md`
 
-### **compose.md**  
 - **Purpose:** Composes a grammatically correct sentence by replacing placeholders and ensuring proper structure.  
 - **Valency:** **1** (Transitive, requires only the object **sentence**).  
 - **Usage:**  
@@ -48,7 +48,7 @@ draft: false
 
 ---
 
-## **3. Sentence Composing Arguments and Execution Steps**  
+## **3. Sentence Composing Arguments**  
 **File:** `/Arguments/sentence.md`  
 
 ```markdown
@@ -67,22 +67,12 @@ draft: false
 ## **Arguments:**  
 - `{person}` → Options: **Woman, Man, Child, Traveler, Farmer**  
 - `{bag}` → Options: **Backpack, Briefcase, Handbag, Messenger bag, Shopping bag**  
-- `{something}` → Options: **Documents, Laptop, Groceries, Camera, Toys**  
-
-## **Execution Steps:**  
-1. **Parse:** Identify `{person}`, `{bag}`, and `{something}` (if applicable).  
-2. **Evaluate:** Retrieve values (e.g., `"traveler"`, `"messenger bag"`, `"book"`).  
-3. **Generate:**  
-   - Randomly select **either the Basic Structure or the Extended Structure** without depending on the availability of `{something}`.  
-
-## **Example Sentence Outputs:**  
-- **Basic:** `"A traveler carries a messenger bag."`  
-- **Extended:** `"A traveler carries a messenger bag with a book inside."`  
+- `{something}` → Options: **Documents, Laptop, Groceries, Camera, Toys**
 ```
 
 ---
 
-## **4. Rules**  
+## **4. Rules and Execution Steps**  
 **File:** `/Rules/sentence_structure.md`  
 
 ```markdown
@@ -94,7 +84,17 @@ draft: false
 
 2. `{something}` is **optional**, but the sentence structure will be chosen randomly, regardless of whether `{something}` is provided.  
 
-3. A bag **may or may not contain items**.  
+3. A bag **may or may not contain items**.
+
+## **Execution Steps:**  
+1. **Parse:** Identify `{person}`, `{bag}`, and `{something}` (if applicable).  
+2. **Evaluate:** Retrieve values (e.g., `"traveler"`, `"messenger bag"`, `"book"`).  
+3. **Generate:**  
+   - Randomly select **either the Basic Structure or the Extended Structure** without depending on the availability of `{something}`.  
+
+## **Example Sentence Outputs:**  
+- **Basic:** `"A traveler carries a messenger bag."`  
+- **Extended:** `"A traveler carries a messenger bag with a book inside."` 
 ```
 
 ---

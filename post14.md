@@ -218,25 +218,27 @@ Output: `22:00`
 # Time-Displaying Framework
 
 ## Folder Structure
-- /Verbs/
-  - display.md
-  - format.md
-  - set.md
-  - merge.md
-- /Nouns/
-  - time.md
-  - hour.md
-  - minute.md
-  - second.md
-  - color.md
-  - size.md
-- /Rules/
-  - operation_formula.md
-- /Templates/
-  - prompt_templates.md
-- /SemanticParsingLayer/
-  - suggestor.md
-  - parser.md
+
+/PromptFramework/
+  - /Verbs/
+    - display.md
+    - format.md
+    - set.md
+    - merge.md
+  - /Nouns/
+    - time.md
+    - hour.md
+    - minute.md
+    - second.md
+    - color.md
+    - size.md
+  - /Rules/
+    - operation_formula.md
+  - /Templates/
+    - prompt_templates.md
+  - /SemanticParsingLayer/
+    - suggestor.md
+    - parser.md
 
 ### /Verbs/display.md
 

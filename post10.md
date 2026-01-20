@@ -25,7 +25,7 @@ Image editing是一種電腦軟體エ³應用。日本話是コㆁ畫像編集�
 
 
 ```
-/Prompts/
+/PromptFramework/
     /Arguments/
         flower.md
     /Verbs/
