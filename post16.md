@@ -1,5 +1,5 @@
 ---
-title: '擬人化影像生成使用軟體構成Framework'
+title: '擬人化影像生成使用軟體作成Framework'
 description: 'gijinka image generation using software composition framework'
 date: 2025-11-19
 tags: ['prompt', 'framework', 'ai', 'shorthand', 'gijinka']
@@ -9,15 +9,15 @@ authors: ["台灣話專科"]
 draft: true
 ---
 
-若コㆁ着軟體構成，着愛用一个具體エ³例來做說明，軟體到底是用啥乜方法來構成エ⁷ネㇷ。擬人化(ギ¹ジㇴ⁷ファ³，ぎじんか)是一个方向。コㅗㇷ¹加上AI띠³影像生成(シㆁ⁷シㆁ⁵)方面是足時行。所以用擬人化影像生成當做軟體構成エ³演示。
+若コㆁ着軟體作成，着愛用一个具體エ³例來做說明，軟體到底是用啥乜方法來作成エ⁷ネㇷ。擬人化(ギ¹ジㇴ⁷ファ³，ぎじんか)是一个方向。コㅗㇷ¹加上AI띠³影像生成(シㆁ⁷シㆁ⁵)方面是足時行。所以用擬人化影像生成當做軟體作成エ³演示。
 
 擬人是句豆エ³一種。譬喻コㆁ「秋天뚜行クェㇷ，冬天着來ア⁷」着是四季エ³擬人（personification）。
 
 擬人化エ³英語是anthropomorphism。カ³非人類エ⁷動物、植物、武器、國家、抽象概念，運用想像力カ⁷轉換做人類エ³外形，着是擬人化エ³一種。台灣有人バッ¹做過疾病、捷運、山岳擬人化。其它像死神、正義女神マ³是擬人化。
 
-軟體構成着是software composition。軟體構成framework是一種利用對AIエ³提示來構成軟體エ³一个家私。用띠³擬人化エ³軟體構成framework是ホ³使用者使用下底text-to-image AI模型來創造、控制、再産生アニメ風格擬人化角色エ³工具。
+軟體作成着是software composition。軟體作成framework是一種利用對AIエ³提示來作成軟體エ³一个家私。用띠³擬人化エ³軟體作成framework是ホ³使用者使用下底text-to-image AI模型來創造、控制、再産生アニメ風格擬人化角色エ³工具。
 
-Composition以チッ¹篇文章エ³語境來コㆁ²，是指影像構圖アㇷ³是軟體構成。
+Composition以チッ¹篇文章エ³語境來コㆁ²，是指影像構圖アㇷ³是軟體作成。
 
 ## Key用띠³輸入，Attribute用띠³輸出
 
@@ -228,7 +228,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 
 ## Framework
 
-代先用ChatGPT做好エ³影像編輯framework，チァㇷ¹コㅗㇷ¹用Grokカ⁷轉換做軟體構成framework。
+代先用ChatGPT做好エ³影像編輯framework，チァㇷ¹コㅗㇷ¹用Grokカ⁷轉換做軟體作成framework。
 
 續ロㅗㇷラィㇷ着是創造你カ⁷キ⁷エ³影像studio。
 
