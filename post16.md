@@ -237,7 +237,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 > Taiwan, November 19, 2025
 ---
 
-# Software Composition Framework v1.0.0 for Gijinka
+# Software Composition Framework v1.0 for Gijinka
 
 ---
 
@@ -347,7 +347,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 ### **9. /Components/metadata.md**
 ```md
 # metadata.md
-- Origin: input hash, timestamp, SCF v1.0.0
+- Origin: input hash, timestamp, SCF v1.0
 - auto_embed!exif_json
 ```
 
