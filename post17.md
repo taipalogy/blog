@@ -131,10 +131,6 @@ Operandエ³號名會對`+`operator産生影響。`forground + background`，望
 チッ¹个創意互動meta template主要是用Geminiカㇷ¹ChatGPT做추ッラィㇷエ³。
 
 ````
-> @taipalogy
-> 2025-12-17
----
-
 # Scientst's Creative Interaction Meta-Template
 
 ## I. Core Action Slot (Main Portrait)
