@@ -233,11 +233,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 續ロㅗㇷラィㇷ着是創造你カ⁷キ⁷エ³影像studio。
 
 ````
-> @taipalogy
-> Taiwan, November 19, 2025
----
-
-# Software Composition Framework v1.0 for Gijinka
+# Software Composition Framework for Gijinka
 
 ---
 
