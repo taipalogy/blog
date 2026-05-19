@@ -274,6 +274,20 @@ Suggestions for 'let + genre("sci-fi") +':
 
 建議器是運作治操作式チッ¹緣。
 
+## SCL追加提問(SCL Follow-up Questions)
+
+SCL相關
+* List Types of Shorthand in SCL
+* Show How Expressions Map to Shorthand in SCL
+* List Expression Types in SCL
+* List Kinds of Tokens in SCL
+* Define Shorthand Syntax in SCL
+
+EBNF相關
+* Explain the Recursive Composition Rule in SCL EBNF
+* Describe How Recursion Works in SCL Expression Composition
+* Explain the Expression ::= Expression + Expression Rule in SCL EBNF
+
 ## 電影選擇Framework
 
 ChatGPT加上Grok産生
