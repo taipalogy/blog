@@ -112,8 +112,8 @@ Copilot産生
 1. Sequential Filtering  
 Start by narrowing the movie pool step by step:
 - 1. recommend + user → candidate_movies  
-- 2. filter + genre("sci-fi") + platform("netflix") → netflixscifi  
-- 3. filter + tone("thought-provoking") + netflixscifi → thoughtful_pool  
+- 2. filter + genre("sci-fi") + platform("netflix") → netflix-sci-fi  
+- 3. filter + tone("thought-provoking") + netflix-sci-fi → thoughtful_pool  
 
 ---
 
@@ -366,17 +366,17 @@ ChatGPT加上Grok産生
 
 ## B. Nouns Folder
 
-| Noun         | Examples                                    |
-| ------------ | ------------------------------------------- |
-| **user**     | `user:John`, `user:anonymous`               |
-| **movie**    | `"Inception"`, `"The Matrix"`               |
-| **genre**    | sci-fi, drama, comedy                       |
-| **actor**    | Leonardo DiCaprio, Emma Stone, Keanu Reeves |
-| **rating**   | 8.5, PG-13, R                               |
-| **platform** | netflix, hulu, apple tv+, prime video       |
-| **tone**     | thought-provoking, dark, uplifting          |
-| **runtime**  | `runtime<90`, `runtime<120`                 |
-| **award**    | oscar, bafta, cannes                        |
+| Noun         | Examples                                                       |
+| ------------ | -------------------------------------------------------------- |
+| **user**     | `user:John`, `user:anonymous`                                  |
+| **movie**    | `Inception`, `The Matrix`                                      |
+| **genre**    | `sci-fi`, `drama`, `comedy`                                    |
+| **actor**    | `Leonardo DiCaprio`, `Emma Stone`, `Keanu Reeves`              |
+| **rating**   | `8.5`, `PG-13`, `R`                                            |
+| **platform** | `Netflix`, `Disney+`, `Apple TV+`, `Prime Video`, `Paramount+` |
+| **tone**     | `thought-provoking`, `dark`, `uplifting`                       |
+| **runtime**  | `runtime<90`, `runtime<120`                                    |
+| **award**    | `Oscar`, `BAFTA`, `Cannes`                                     |
 
 ---
 
