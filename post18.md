@@ -203,4 +203,7 @@ The output format adapts to the environment or explicit command invocation defin
 ### Conflict Resolution Rule
 
 If an environment conflict occurs (e.g., calling `Materialize()` with hyper-realistic styles while the calling context is restricted to `Terminal`), the object resolves the contradiction without crashing. It defaults to outputting a structured text description of the visual asset rather than attempting to render a binary asset or corrupt data.
+
+---
 ````
+
