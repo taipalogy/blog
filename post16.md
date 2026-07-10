@@ -1,6 +1,6 @@
 ---
-title: '擬人化影像生成使用軟體作成Framework'
-description: 'gijinka image generation using software composition framework'
+title: '擬人化影像生成使用影像作成Studio'
+description: 'gijinka image generation using image composition studio'
 date: 2025-11-19
 tags: ['prompt', 'framework', 'ai', 'shorthand', 'gijinka']
 image: ""
@@ -228,394 +228,102 @@ Show another feature mapping which has a totally different arrangement for PaizK
 
 ## Framework
 
-代先用ChatGPT做好エ³影像編輯framework，チァㇷ¹コㅗㇷ¹用Grokカ⁷轉換做軟體作成framework。
+代先用ChatGPT,Grok做好エ³軟體作成framework，チァㇷ¹コㅗㇷ¹用Geminiカ⁷轉換做影像作成studio。
+
+`Please provide an `input_topic` to proceed.`
 
 續ロㅗㇷラィㇷ着是創造你カ⁷キ⁷エ³影像studio。
 
 ````
-# Software Composition Framework for Gijinka
+> @taipalogy 2026-07-10
 
----
+# Image Composition Studio for Gijinka
 
-## Final Folder Structure (25 Files)
+## Folder Structure
+
 ```
 /PromptFramework/
-    /Components/ (12)
-        subject.md outfit.md pose.md frame.md expression.md backdrop.md grid.md style.md metadata.md postprocess.md mode.md skin.md
-    /Layers/ (8)
-        image.md game.md translation.md semantic.md debug.md optics.md refine.md soul.md
-    /Rules/ (1)
-        gijinka_rules.md
-    /Templates/ (1)
-        gijinka_template.md
-    /Operators/ (1)
-        syntax.md
-    /Preview/ (1)
-        grid_preview.md
-    /Commands/ (1)
-        user_commands.md
+  /Components/
+    subject.md: {id: "person/object/concept", figure!lock_proportions}
+    outfit.md: {visual: "clothing/armor", fit!form, color~adaptive, merge!seamless}
+    pose.md: {stance: "idle/dynamic", tilt~natural, pose!perched_grace}
+    frame.md: {view: "close/mid/full", crop!rule_of_thirds, center!face, auto_adjust!aspect_ratio}
+    expression.md: {mood: "hopeful/fierce/calm", expression~variant, eyes!expressive}
+    backdrop.md: {env: "forest/studio/void", tone~harmonic, lighting_aware!true, backdrop!thematic_soft}
+    grid.md: {layout: "1x1", @preview!grid_nx1}
+    style.md: {art: "anime/real/photoreal", style!preset_anime_v3, style!preset_real_v2}
+    metadata.md: {origin: "hash/time", auto_embed!exif_json}
+    postprocess.md: {polish: "sharpen/glow/cinematic", upscale_x2!optional, dew_gloss!on}
+    mode.md: {modes: "real/acg", default: "mode!acg"}
+    skin.md: {texture: "organic_micro", surface!glossy, scale!none, sheen!iridescent_subtle}
+  /Stages/
+    image.md: {core: "subject!{name}", skin!organic_micro!lock, face!expressive_hybrid, hands!subtle_webbing, hair!slick_crest, outfit!seamless, frame!mid_shot, backdrop!thematic_soft, style!preset_anime_v3, postprocess!cinematic}
+    game.md: {action: "pose!{action}", animation!{subtle}, stance!{guardian}}
+    translation.md: {soul: "name!{parsed}", voice!{adjective_noun}, trait!{role_domain}}
+    semantic.md: {emotion: "input_essence", memory: "core_metaphor", intent: "natural_action", @parse!universal}
+    debug.md: {@preview!grid_nx1, @variant!any_attribute, render!temporary, output!never_final, auto_exclude!from_final}
+    optics.md: {imaging: "camera!auto_ideal", aperture!dof_cinematic, aspect_ratio!detect, hdr!on, lighting!3point_pro, quality!8k_masterpiece, negative_prompt!{blur, noise, artifact, feral, animal head, muzzle, scales, claws}}
+    refine.md: {@refine!user_confirm, confidence!0.98, @preview!grid_nx1, @select!variant_id, auto_apply!drift_fix, @log!chain_history}
+    soul.md: {essence: "identity!{input_soul}", myth!born_not_built, aura!self_illuminated, @refine!shounen_vibrant_grade}
+    manifestation.md: {topic_analysis: "flexible_map", equation: "modular_grouping", stage_link!recursive}
+  /Rules/
+    gijinka_rules.md
+  /Templates/
+    gijinka_template.md
+  /Operators/
+    syntax.md
+  /Preview/
+    grid_preview.md
+  /Commands/
+    user_commands.md
+
 ```
 
 ---
 
-### **1. /Components/subject.md**
-```md
-# subject.md
-- Core identity: person, object, concept
-- Source of Gijinka
-- figure!lock_proportions → consistent across variants
-```
+## /Rules/gijinka_rules.md
+
+* **Core Mandates:** 1. Every input becomes a Gijinka. 2. Game stage defines action. 3. Translation stage gives name and voice. 4. Semantic stage gives emotion and memory. 5. Image stage renders body. 6. Grid!1x1 shows one character.
+* **Debug & Precision:** 7. **stage!debug is never final**. 8. User must @select!variant_id. 9. stage!optics auto-optimizes imaging. 10. Self-positioning for quality. 11. Final = 8K/HDR/DOF.
+* **Technical Constraints:** 12. source!literal_only. 13. form!human_female_default. 14. feature_map!explicit. 15. texture!8k_priority!early. 16. @refine!user_confirm pause < 0.98. 17. negative!feral_lock. 18. skin!organic_micro. 19. myth!born_not_built. 20. @map!structure_biology. 21. skin!biological_merge.
+* **Advanced Logic:** 22. @variant!refine. 23. negative!prop_lock. 24. myth!biological_origin. 25. chain!atomic_only. 26. multi_value_handling. 27. image_chain_flex. 28. image_scoped_rules. 29. !lock vs !locked. 30. identity_consistency. 31. Manifestation stage bridges analysis to equation-based composition.
 
 ---
 
-### **2. /Components/outfit.md**
-```md
-# outfit.md
-- Visual layer: clothing, armor, texture
-- fit!form → form-fitting override
-- color~adaptive → harmonize with backdrop
-- merge!seamless → with skin
-```
+## /Templates/gijinka_template.md
+
+`@prompt!{input}` → `source!literal_only` → `form!human_female_default` → `stage!manifestation` → `stage!image` → `stage!game` → `stage!translation` → `stage!semantic` → `stage!soul` → `stage!optics` → `stage!refine [auto]` → `stage!debug [optional]` → `grid!1x1` → `gijinka` → `@select!fallback → default`.
 
 ---
 
-### **3. /Components/pose.md**
-```md
-# pose.md
-- Stance: idle, dynamic, expressive
-- tilt~natural → organic micro-variation
-- pose!perched_grace → cyber_flat_perch
-```
+## /Operators/syntax.md
+
+* `!` (lock): Enforce key to argument. Example: `face!crenelated_brow`
+* `~` (vary): Controlled variation (~dynamic, ~adaptive, ~harmonic).
+* `-` (omit): Suppress attribute.
+* `+` (group): Modular conceptual assembly.
+* Format: `key!arg1, arg2`
 
 ---
 
-### **4. /Components/frame.md**
-```md
-# frame.md
-- Viewport: close-up, mid-shot, full-body
-- crop!rule_of_thirds
-- center!face_or_action
-- auto_adjust!aspect_ratio
-```
+## /Preview/grid_preview.md
+
+`@preview!grid_nx1` → `@variant!strict_form vs mythic_interpretation vs extra_luxury` → `output!non_final` → `use!refinement_only` → `watermark!PREVIEW — SELECT ONE` → `face_lock!strict` → `skin!organic_micro`.
 
 ---
 
-### **5. /Components/expression.md**
-```md
-# expression.md
-- Mood: hopeful, fierce, calm
-- expression~variant → allow shifts in debug
-- eyes!expressive → large, reflective, ringed pupils
-```
+## /Commands/user_commands.md
 
----
-
-### **6. /Components/backdrop.md**
-```md
-# backdrop.md
-- Environment: forest, studio, void
-- tone~harmonic → auto-match outfit
-- lighting_aware!true
-- backdrop!thematic_soft → moss, fireflies, bokeh
-```
-
----
-
-### **7. /Components/grid.md**
-```md
-# grid.md
-- Layout: 1x1 (final)
-- @preview!grid_nx1 → debug + variant selection
-```
-
----
-
-### **8. /Components/style.md**
-```md
-# style.md
-- Art: anime, realism, photoreal
-- style!preset_anime_v3 → cyber_flat
-- style!preset_real_v2
-```
-
----
-
-### **9. /Components/metadata.md**
-```md
-# metadata.md
-- Origin: input hash, timestamp, SCF v1.0
-- auto_embed!exif_json
-```
-
----
-
-### **10. /Components/postprocess.md**
-```md
-# postprocess.md
-- Final polish: sharpen, glow, cinematic
-- upscale_x2!optional
-- dew_gloss!on → cyberflat_neon_glow
-```
-
----
-
-### **11. /Components/mode.md**
-```md
-# mode.md
-- mode!real → camera + neutral lighting
-- mode!acg → soft lighting, anime lens
-- Default: mode!acg
-```
-
----
-
-### **12. /Components/skin.md**
-```md
-# skin.md
-- texture!organic_micro → pores, bumps, dew-gloss
-- surface!glossy → wet-look, reflective
-- scale!none → block scale override
-- sheen!iridescent_subtle
-```
-
----
-
-### **13. /Layers/image.md**
-```md
-# image.md — Visual Body
-→ subject!{name}
-→ skin!organic_micro!lock
-→ face!expressive_hybrid → "beautiful detailed human face, large reflective eyes with ringed pupils, subtle brow ridge"
-→ hands!subtle_webbing
-→ hair!slick_crest
-→ outfit!{form-fitting}, merge!seamless
-→ frame!{mid_shot}
-→ backdrop!thematic_soft
-→ style!preset_anime_v3
-→ postprocess!cinematic, dew_gloss!on
-```
-
----
-
-### **14. /Layers/game.md**
-```md
-# game.md — Action in Image
-→ pose!{action}
-→ animation!{subtle}
-→ stance!{guardian}
-```
-
----
-
-### **15. /Layers/translation.md**
-```md
-# translation.md — Soul & Voice
-→ name!{parsed}
-→ voice!{adjective_noun}
-→ trait!{role_domain}
-```
-
----
-
-### **16. /Layers/semantic.md**
-```md
-# semantic.md — Emotion & Memory
-→ emotion!{input_essence}
-→ memory!{core_metaphor}
-→ intent!{natural_action}
-→ @parse!universal → input → soul
-```
-
----
-
-### **17. /Layers/soul.md**
-```md
-# soul.md — Mythic Essence
-→ identity!{input_soul}
-→ myth!born_not_built
-→ aura!self_illuminated
-→ @refine!cyberflat_grade
-```
-
----
-
-### **18. /Layers/debug.md**
-```md
-# debug.md — Isolated Refinement
-→ @preview!grid_nx1
-→ @variant!any_attribute
-→ render!temporary
-→ output!never_final
-→ auto_exclude!from_final
-```
-
----
-
-### **19. /Layers/optics.md**
-```md
-# optics.md — Self-Optimizing Imaging
-→ camera!auto_ideal
-→ aperture!dof_cinematic
-→ aspect_ratio!detect
-→ hdr!on
-→ lighting!3point_pro + self_rim
-→ position!rule_of_thirds_auto
-→ quality!8k_masterpiece
-→ negative_prompt!blur, noise, artifact, feral, animal head, muzzle, scales, claws
-```
-
----
-
-### **20. /Layers/refine.md**
-```md
-# refine.md — Chain Self-Correction + Variant Selection
-→ @refine!user_confirm
-→ confidence!threshold_0.98
-→ @preview!grid_nx1
-  → default!{primary_variant}
-  → variant!{alt_variant}
-  → extra!{luxury_variant}
-→ @select!variant_id
-→ @select!fallback → default
-→ auto_apply!drift_fix
-→ @log!chain_history → /Logs/chain_log.md
-```
-
----
-
-### **21. /Rules/gijinka_rules.md**
-```md
-# gijinka_rules.md — Immutable Laws + Renderer Compatibility
-1. Every input becomes a Gijinka
-2. Game layer defines action
-3. Translation layer gives name and voice
-4. Semantic layer gives emotion and memory
-5. Image layer renders the body
-6. Grid!1x1 shows one character in one image → EXCEPT in layer!debug or variant preview
-7. layer!debug is never included in final
-8. **User must @select!variant_id to lock final** (fallback to default)
-9. layer!optics auto-optimizes imaging
-10. Gijinka self-positions for maximum visual quality
-11. Final image = 8K-ready, HDR, cinematic DOF
-12. source!literal_only → NO added lore unless @expand
-13. form!human_female_default → bipedal, human proportions
-14. feature_map!explicit → animal trait → human body part
-15. texture!8k_priority!early → sharpness locked in layer!image
-16. @refine!user_confirm → pause if confidence < 0.98
-17. negative!feral_lock → block quadruped, animal head, muzzle, scales, claws
-18. skin!organic_micro → no scales, micro-pores only
-19. myth!born_not_built → Gijinka must feel alive, not constructed
-
-## **BIOLOGICAL CORE RULES**
-20. **@map!structure_biology** → Source anatomy → human body
-21. **skin!biological_merge** → No fabric. Skin *is* the input.
-22. **@variant!refine** → Same biology → different soul expression
-23. **negative!prop_lock** → No external objects of the source
-24. **myth!biological_origin** → "I was never built. I grew."
-
-## **FINAL REFINEMENTS**
-25. **chain!atomic_only** → 
-   - `!` = **3-place verb ("lock")**
-   - Key = **patient / subject**
-   - Value(s) = **goal / argument(s)**
-   - Comma = **conjunction of goals**
-   - Example: `key!arg1, arg2` → "key is locked to arg1 and arg2"
-26. **multi_value_handling** → Use `@preview!grid_nx1` + `select variant`.
-27. **image_chain_flex** → Reorder freely **within** `image.md`.
-28. **image_scoped_rules** → `@rule!` only in `image.md`, never cross-layer.
-29. **!lock_clarity** → 
-   - `!lock` = structural (e.g. `face!lock`, `identity!lock`)
-   - `!locked` = state mode (e.g. `focus!locked`)
-   - Invalid: `expression!lock`, `focal_length!locked`
-30. **identity_consistency** → 
-   - Lock face: `identity!lock` or `identity!locked`
-   - Lock mood: `expression!calm`
-   - Vary mood: `expression~variant`
-
-## **Renderer Compatibility**
-- nano_banana: Add "beautiful human portrait" + strong negative
-- SDXL / Pony XL: Best for Cyberflat-grade neon illustration
-- Realism models: Avoid — default to animal heads
-```
-
----
-
-### **22. /Templates/gijinka_template.md**
-```md
-# gijinka_template.md — Input to Infinite Souls
-@prompt!{input}
-→ source!literal_only
-→ form!human_female_default
-→ layer!image
-→ layer!game
-→ layer!translation
-→ layer!semantic
-→ layer!soul
-→ layer!optics
-→ layer!refine [auto]
-→ layer!debug [optional, auto-excluded]
-→ grid!1x1
-→ gijinka
-→ @select!fallback → default
-```
-
----
-
-### **23. /Operators/syntax.md**
-```md
-# syntax.md — Operator Logic (User-Facing Only)
-## Core Operators
-- `!` → **verb: "lock"** → enforce key to argument(s)  
-  Example: `face!crenelated_brow` → "lock face to crenelated_brow"
-
-- `~` → **verb: "vary"** → allow controlled variation  
-  Subtypes:
-  - `~dynamic` → motion/time-based
-  - `~adaptive` → context-reactive
-  - `~harmonic` → aesthetic cohesion
-
-- `-` → **verb: "omit"** → suppress attribute  
-  Example: `backdrop-` → "omit backdrop"
-
-## Verb-Argument Grammar
-- Format: `key!arg1, arg2, arg3`
-- `!` = **verb**
-- Values after `!` = **arguments** (conjoined with `,`)
-- Example:
-  ```md
-  face!crenelated_brow, merlon_cheekbones
-  → "lock face to crenelated_brow and merlon_cheekbones"
-```
-
----
-
-### **24. /Preview/grid_preview.md**
-```md
-# grid_preview.md
-→ @preview!grid_nx1
-→ @variant!strict_form vs mythic_interpretation vs extra_luxury
-→ output!non_final
-→ use!refinement_only
-→ watermark!PREVIEW — SELECT ONE
-→ face_lock!strict → all variants
-→ skin!organic_micro → all variants
-```
-
----
-
-### **25. /Commands/user_commands.md**
-```md
-# user_commands.md — Official SCF Commands
-| Command | Syntax | Effect |
-|---------|--------|--------|
-| `generate prompt` | Append | Expands **selected variant** to render-ready prompt |
-| `preview grid` | `preview grid 3x1` | Triggers **nx1 variant comparison** |
-| `select variant` | `select variant v3_rose_elegance` | **Locks variant** |
-| `add watermark` | `add watermark "Software Composition Framework for Gijinka"` | Adds watermark |
-| `export chain` | `export chain` | Saves chain + variants |
-| `set mode` | `set mode acg|real` | Switches mode |
-| `set style` | `set style [name]` | Replaces current style in the chain |
-```
+| Command | Effect |
+| --- | --- |
+| `generate prompt` | Expands selected variant to render-ready prompt |
+| `generate structure` | Parses manifestation equation into formal Topic/Analysis/Equation/Instruction block |
+| `preview grid [nx1]` | Triggers variant comparison |
+| `select variant [id]` | Locks variant |
+| `add watermark` | Adds "Image Composition Studio for Gijinka" |
+| `export chain` | Saves chain + variants |
+| `set mode [acg/real]` | Switches mode |
+| `set style [name]` | Replaces style in chain |
 
 ---
 
