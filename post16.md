@@ -180,10 +180,10 @@ prompt!oyster
 
 使用者命令像`Generate prompt`是卡捷用エ⁷。
 
-コㅗㇷ¹有像`set mode`。チッ¹个命令エ³タㆁ²カ³`mode!acg`切換做`mode!real`。
+コㅗㇷ¹有像`set style [name]`。チッ¹个命令エ³タㆁ²カ³`style!preset_anime_v3`切換做`style!3d_anime_v1`。
 
 ```text
-Set mode real.
+Set style to 3D anime style.
 ```
 
 其它エ使用者命令請參考user_commands檔案。
