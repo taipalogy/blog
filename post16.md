@@ -251,10 +251,10 @@ Show another feature mapping which has a totally different arrangement for PaizK
     expression.md: {mood: "hopeful/fierce/calm", expression~variant, eyes!expressive}
     backdrop.md: {env: "forest/studio/void", tone~harmonic, lighting_aware!true, backdrop!thematic_soft}
     grid.md: {layout: "1x1", @preview!grid_nx1}
-    style.md: {art: "anime/real/photoreal", style!preset_anime_v3, style!preset_real_v2}
+    style.md: {art: "anime", style!preset_anime_v3}
     metadata.md: {origin: "hash/time", auto_embed!exif_json}
     postprocess.md: {polish: "sharpen/glow/cinematic", upscale_x2!optional, dew_gloss!on}
-    mode.md: {modes: "real/acg", default: "mode!acg"}
+    mode.md: {modes: "acg", default: "mode!acg"}
     skin.md: {texture: "organic_micro", surface!glossy, scale!none, sheen!iridescent_subtle}
   /Stages/
     image.md: {core: "subject!{name}", skin!organic_micro!lock, face!expressive_hybrid, hands!subtle_webbing, hair!slick_crest, outfit!seamless, frame!mid_shot, backdrop!thematic_soft, style!preset_anime_v3, postprocess!cinematic}
@@ -286,7 +286,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 * **Core Mandates:** 1. Every input becomes a Gijinka. 2. Game stage defines action. 3. Translation stage gives name and voice. 4. Semantic stage gives emotion and memory. 5. Image stage renders body. 6. Grid!1x1 shows one character.
 * **Debug & Precision:** 7. **stage!debug is never final**. 8. User must @select!variant_id. 9. stage!optics auto-optimizes imaging. 10. Self-positioning for quality. 11. Final = 8K/HDR/DOF.
 * **Technical Constraints:** 12. source!literal_only. 13. form!human_female_default. 14. feature_map!explicit. 15. texture!8k_priority!early. 16. @refine!user_confirm pause < 0.98. 17. negative!feral_lock. 18. skin!organic_micro. 19. myth!born_not_built. 20. @map!structure_biology. 21. skin!biological_merge.
-* **Advanced Logic:** 22. @variant!refine. 23. negative!prop_lock. 24. myth!biological_origin. 25. chain!atomic_only. 26. multi_value_handling. 27. image_chain_flex. 28. image_scoped_rules. 29. !lock vs !locked. 30. identity_consistency. 31. Manifestation stage bridges analysis to equation-based composition.
+* **Advanced Logic:** 22. @variant!refine. 23. negative!prop_lock. 24. myth!biological_origin. 25. chain!atomic_only. 26. multi_value_handling. 27. image_chain_flex. 28. image_scoped_rules. 29. !lock vs !locked. 30. identity_consistency. 31. Manifestation stage bridges analysis to equation-based composition. 32. **Mode is locked to ACG.**
 
 ---
 
@@ -322,7 +322,6 @@ Show another feature mapping which has a totally different arrangement for PaizK
 | `select variant [id]` | Locks variant |
 | `add watermark` | Adds "Image Composition Studio for Gijinka" |
 | `export chain` | Saves chain + variants |
-| `set mode [acg/real]` | Switches mode |
 | `set style [name]` | Replaces style in chain |
 
 ---
