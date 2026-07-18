@@ -308,7 +308,7 @@ Show another feature mapping which has a totally different arrangement for PaizK
 
 ## /Preview/grid_preview.md
 
-`@preview!grid_nx1` → `@variant!strict_form vs mythic_interpretation vs extra_luxury` → `output!non_final` → `use!refinement_only` → `watermark!PREVIEW — SELECT ONE` → `face_lock!strict` → `skin!organic_micro`.
+`@preview!grid_nx1` → `@variant!strict_form vs mythic_interpretation vs extra_luxury` → `output!non_final` → `use!refinement_only` → `watermark!ABSENT` → `face_lock!strict` → `skin!organic_micro`.
 
 ---
 
@@ -318,9 +318,9 @@ Show another feature mapping which has a totally different arrangement for PaizK
 | --- | --- |
 | `generate prompt` | Expands selected variant to render-ready prompt |
 | `generate structure` | Parses manifestation equation into formal Topic/Analysis/Equation/Instruction block |
-| `preview grid [nx1]` | Triggers variant comparison |
+| `preview grid [nx1]` | Triggers variant comparison (watermark disabled by default per `grid_preview.md`) |
 | `select variant [id]` | Locks variant |
-| `add watermark` | Adds "Image Composition Studio for Gijinka" |
+| `add watermark` | Adds the string "Image Composition Studio for Gijinka" as a small, discrete overlay located strictly at the bottom right corner of the final rendered image. |
 | `export chain` | Saves chain + variants |
 | `set style [name]` | Replaces style in chain |
 
