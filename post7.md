@@ -15,7 +15,7 @@ Implicit operator overloading（インプリシットオペレーターオーバ
 
 띠³Implicit operator overloading是關（Off）エ³情形下，カㇴ⁷ナ⁷カ³operator當做構造要素アㇴ¹ネ來對待。ナ⁷對等式エ³解讀是完全基於等式エ³構造，ブェ³키カ³語義關係推論추ッラィㇷ。着是コㆁ對operatorエ³解讀是固定エ⁷。
 
-띠³Implicit operator overloading是開（On）エ³情形下，타ㆁ⁷對operator做語義關係エ³推論。對等式內底，各要素是アㇴ¹ツァ˜互動組合來産生結果是有卡各樣エ⁷理解。着是コㆁ對operatorエ³解讀是卡有語義上エ³flexibility，卡無固定エ⁷解讀，會뚜ェ²上下文改變。
+띠³Implicit operator overloading是開（On）エ³情形下，타ㆁ⁷對operator做語義關係エ³推論。對等式內底，各要素是アㇴ¹ツァ˜互動組合來産生結果是有各樣各樣エ⁷理解。着是コㆁ對operatorエ³解讀是卡有語義上エ³flexibility，卡無固定エ⁷解讀，會뚜ェ²上下文改變。
 
 ラㇴベㇷ¹用エ⁷提示是用ChatGPT做エ³，有使用樹基解析カㇷ¹Stanza依存解析。カ⁷貼カㇷ¹Perplexity AI內底，ホ³Perplexity AI回答：
 
