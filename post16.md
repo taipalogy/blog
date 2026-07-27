@@ -321,7 +321,8 @@ Show another feature mapping which has a totally different arrangement for PaizK
 | `preview grid [nx1]` | Triggers variant comparison (watermark disabled by default per `grid_preview.md`) |
 | `select variant [id]` | Locks variant |
 | `add watermark` | Adds the string "Image Composition Studio for Gijinka" as a small, discrete overlay located strictly at the bottom right corner of the final rendered image. |
-| `export chain` | Saves chain + variants |
+| `export json package` | Exports the input string, render-ready prompt, watermark status, and the exact watermark string value enclosed within a code block as a single, unified JSON object, regardless of whether the watermark is currently enabled or disabled. |
+| `show execution log` | Displays the detailed chain execution log and stage analysis summary. |
 | `set style [name]` | Replaces style in chain |
 
 ---
