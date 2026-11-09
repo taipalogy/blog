@@ -91,7 +91,7 @@ specify(features("F001,F002,F003")) + surface(attribute("title,priority,risk_lev
 チッ¹个鏈利用資料庫ホ³GeoSightエ³dashboard module浮키ㇷラィㇷ，コㅗㇷ¹用highlight來協助快速風險評估。
 
 ### Bundle，Cluster
-Bundle:為着組織的エ³目的，カ³功能項以明示方式組키ㇷラィㇷ變做一个module，創造一个定義好エ³結構。
+Bundle:為着組織的エ³目的，カ³功能項以分明方式組키ㇷラィㇷ變做一个module，創造一个定義好エ³結構。
 Cluster:為着分析アㇷ³是視覺化コㅗㇷ¹無愛創一个持續性エ³module，基於共享エ³屬性（例，依存關係，module），カ³功能項アㇷ³是attribute以動態方式分組。
 
 尹ロㆁ是牽涉着カ³功能項分組，ㆬ³コㅗㇷ¹bundle是創造一个正式、有持續性エ³module，アcluster是一个分析性アㇷ³是視覺性エ³分組，無啥可能有持續性。
@@ -121,7 +121,7 @@ Trace是提一个attribute（例，dependencies），專注띠³追隨跨功能�
 
 Validate是，對ヒッ¹个特定エ³跨功能項アㇷ³是moduleエ³屬性，提一个attribute（例，"test_coverage"アㇷ³是 "validation_status"）去檢查一致性カㇷ¹coverage。
 
-ㆬ³コㅗㇷ¹，Traceカㇷ¹validateロㆁ是透過カ³attribute檢查應用到相關エ，ホ³查詢カㇷ¹上下文所指定エ⁷實体（例，功能項，module），以隱示エ⁷方式對規格/功能項做操作。
+ㆬ³コㅗㇷ¹，Traceカㇷ¹validateロㆁ是透過カ³attribute檢查應用到相關エ，ホ³查詢カㇷ¹上下文所指定エ⁷實体（例，功能項，module），以非明言エ⁷方式對規格/功能項做操作。
 
 チッ¹个frameworkカ³卡濶エ³操作轉授ホ³鏈키ㇷラィㇷエ³動詞（例，カㇷ¹surfaceアㇷ³是cluster結合），應對複雜規格/功能項分析。
 

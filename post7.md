@@ -11,7 +11,7 @@ draft: false
 
 Implicit operator overloading（インプリシットオペレーターオーバーロード）エ³概念是對程式語言來エ⁷。若是カ³伊用띠³自然語言處理エ³領域，着是レ做單文カㇷ¹等式（equation）解析エ³時ツㇴ⁷，エ³키牽涉着看是ベㇷ¹カ³operator解讀做構造要素アㇷ³是語義關係。AI타ㆁ⁷處理單文，マ³エ³用得處理等式，甚至是單文ハㇺ³等式エ³互相表達轉述。
 
-一个等式內底エ³要素有operator（オペレーター）カㇷ¹operand（オペランド）。Implicit（默示）是相對explicit（明示）エ³一个概念。
+一个等式內底エ³要素有operator（オペレーター）カㇷ¹operand（オペランド）。Implicit（非明文，非字面）是相對explicit（明文，字面）エ³一个概念。
 
 띠³Implicit operator overloading是關（Off）エ³情形下，カㇴ⁷ナ⁷カ³operator當做構造要素アㇴ¹ネ來對待。ナ⁷對等式エ³解讀是完全基於等式エ³構造，ブェ³키カ³語義關係推論추ッラィㇷ。着是コㆁ對operatorエ³解讀是固定エ⁷。
 

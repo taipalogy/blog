@@ -13,16 +13,13 @@ draft: false
 
 カ⁷ChatGPTムㆁ³コㆁ：
 ``` 
-
 So we don't express the passive form of driven in the construction of プロンプト駆動フレームワーク? 
 
 ``` 
 
 ChatGPT應コㆁ：
 ``` 
-
 Correct! In the construction プロンプト駆動フレームワーク (puronputo kudō furēmuwāku, prompt-driven framework) in Japanese, the passive form of "driven" is not explicitly expressed. Instead, 駆動 (kudō) is used, which is an active noun form meaning "driving" or "drive". 
-
 ``` 
 
 Prompt-driven翻做台語是「ホ³提示驅動エ⁷」，「提示驅動エ⁷」，或者是「被提示驅動的」。被ジㇷ用띠³漢語或者是書面語，無ヒァ捷用。Prompt-driven framework翻做ホ³提示驅動エ⁷framework，是シㅗ¹쿠ァロㅗ⁷ソㅗ，ㆬ³コㅗㇷ¹イ文法來コㆁ²是正確エ³。アㇷ¹コㅗㇷ¹提示驅動Framework是一个卡簡明エ⁷表達。另外一種表達是提示驅動型Framework。因為ケ⁷一个型ジㇷ，意思カㇷ¹prompt-driven frameworkマ³シㅗ¹쿠ァ有爭差。
@@ -101,7 +98,7 @@ Folder構造是你アㇴ¹ツァ˜カ³你エ³codeカㇷ¹資源띠ァㇺ²disk
 
 一種是整合式。framework是外部module。提示對framework動態産生出來，チァㇷ¹コㅗㇷ¹サ⁷過去AIヒァ處理。Frameworkイゥ⁷ウァㇴ⁷有獨立性，AI利用伊エ³輸出創作추ッ¹回應。
 
-一種是嵌入式。Frameworkエ³logicカㇷ¹開講系統融合做フェ²。AI模型띠³開講session內底受framework以意味分明方式引導。提示，規則，カㇷ¹templateロㆁ深入整合띠³會話エ³流動內底。
+一種是嵌入式。Frameworkエ³logicカㇷ¹開講系統融合做フェ²。AI模型띠³開講session內底受着frameworkエ³明文引導。提示，規則，カㇷ¹templateロㆁ深入整合띠³會話エ³流動內底。
 
 ## カㇷ¹傳統Framework共同運作 
 
