@@ -2,7 +2,7 @@
 title: 'AI類別：封裝，繼承，多型以外'
 description: 'AI class: in addition to encapsulation, inheritance, and polymorphism'
 date: 2026-07-03
-tags: ['prompt', 'framework', 'ai', 'class', 'object-oriented']
+tags: ['prompt', 'ai', 'class', 'object-oriented']
 image: ""
 categories: [""]
 authors: ["台灣話專科"]
@@ -70,7 +70,7 @@ This class library defines an abstract character object architecture capable of 
 ## 1. Folder Structure
 
 ```text
-/PromptFramework/
+/LowercaseGlyphLibrary/
   /AbstractClass/
     - LowercaseGlyph.md (Base Blueprint: Behavioral transformations and casting)
   /ConcreteSubclasses/
